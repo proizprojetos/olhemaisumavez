@@ -1,0 +1,203 @@
+
+/*Efeito modal*/
+.janelaModal {
+	position: absolute;
+	top:0px;
+}
+.ui-widget-overlay {
+	background: #689fbb;
+	opacity: .75;
+	filter: Alpha(Opacity=75);
+}
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-front {
+	z-index: 100;
+}
+.ui-dialog {
+	background:#fff;
+	padding: 40px 35px;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 0;
+	margin: 10px 5px 0 0;
+	padding: 3px 15px;
+	border: 1px solid #d7eaf5;
+	background: #4aa0dc;
+	font: normal 14px/1.5em "aller_regular", tahoma;
+	color: #fff;
+}
+
+
+.palestras .palestra_mensagem {
+	padding: 30px 100px 0px 100px;
+}
+.palestras .palestra_mensagem p{
+	font: normal 14px/2.2em "aller_italic", tahoma;
+	color: #838383;
+}
+.palestras .palestra_mensagemfinal p,   #dialog .info_palestras h5{
+	font: normal 18px/1.9em "aller_regular", tahoma;
+	color: #838383;
+}
+.palestras .palestra_mensagem h5{
+	font: normal 14px/1.5em "aller_italic", tahoma;
+	color: #4aa0dc;
+	text-align: right;
+}
+.palestras .corpo_palestras {
+	margin-bottom:80px;	
+}
+.palestras .palestrante {
+	display:inline-block;	
+}
+.palestras .palestrante .palestrante_info {
+	width:50%;
+	float:left;
+}
+.palestras .palestrante .palestrante_info h2, .palestras .formato_palestras h2{
+	font: normal 28px/1.5em "aller_regular", tahoma;
+	color: #4aa0dc;		
+	margin-top:0px;
+}
+.palestras .palestrante .palestrante_info h3{
+	font: normal 16px/1.5em "aller_regular", tahoma;
+	color: #484848;		
+}
+.palestras .palestrante .palestrante_info p, .formato_palestras p, .grupo_palestras p{
+	font: normal 14px/1.8em "aller_regular", tahoma;
+	color: #484848;	
+	padding-right: 50px;	
+}
+.palestras .palestrante .palestrante_info button{
+	font: normal 14px/2em "aller_regular", tahoma;
+	color: #484848;	
+	border:none;
+	text-decoration:underline;
+	margin:0px;
+	padding:0px;
+	background:none;
+}
+.palestras .palestrante .palestrante_foto {
+	width:40%;	
+	display:inline-block;		
+}
+.palestras .formato_palestras {
+	margin-top:40px;	
+}
+.palestras .formato_palestras h4, .grupo_palestras h3, #dialog .info_palestras h3{
+	font: normal 17px/1.5em "aller_regular", tahoma;
+	color: #484848;
+	padding-right:40px;
+}
+.palestras .grupo_palestras span {
+	display: inline-block;
+	width: 49%;
+	float: left;	
+}
+#dialog .info_palestras span {
+	font: normal 24px/1.5em "aller_regular", tahoma;
+	color: #4aa0dc;
+}
+
+#dialog .info_palestras p, #dialog .info_palestras a, #dialog .info_palestras a:hover {
+	font: normal 14px/1.8em "aller_regular", tahoma;
+	color: #484848;		
+	text-decoration:none;
+}
+#dialog .info_palestras h5{
+	font: normal 18px/1.5em "aller_regular", tahoma;
+	color: #838383;
+}
+#dialog .fotos_palestrante {
+	display: block;
+	float: left;
+	height: 1000px;
+	width: 320px;
+}
+#dialog .fotos_palestrante img{
+	margin: 0px 25px 25px 25px;
+	width: 250px;
+	height: 180px;
+}
+
+
+.grupos_palestras .grupo {
+	background:#4aa0dc;
+	width:225px;
+	height:225px;
+	float:left;
+	text-align:center;	
+	margin: 2px;
+	border-top: 1px solid #4aa0dc;
+	border-right: 1px solid #4aa0dc;
+}
+.grupos_palestras .grupo img {
+	display: block;
+	margin-left: 10%;
+	margin-top: 15%;
+}
+.grupos_palestras .grupo a, .grupos_palestras .grupo a:hover,  .grupos_palestras .grupo_info a{
+	font: normal 12px/1.5em "aller_regular", tahoma;
+	color: #FFF;
+	margin-top: 25px;
+	background: #3981a6;
+	padding: 5px 12px;
+	border-radius: 30px;
+	display: inline-block;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.grupos_palestras .grupo_info .bt_voltar_palestras {
+	text-align:center;
+	
+}
+.grupos_palestras .grupo_info .bt_voltar_palestras a{
+	font-size:14px;
+	padding: 7px 20px;
+}
+.grupos_palestras .grupo_info {
+	margin: 2px;
+	width:356px;
+	height: 606px;
+	background: #4aa0dc;
+	position:absolute;
+	display:none;
+}
+
+.grupos_palestras .grupo_info {
+	padding:30px 50px 50px 50px;	
+}
+
+.grupos_palestras .grupo_info h2{
+	font: normal 30px/1.5em "aller_regular", tahoma;
+	color: #FFF;
+}
+.grupos_palestras .grupo_info h3{
+	font: normal 20px/1.5em "aller_bold", tahoma;
+	color: #5a5a5a;
+	margin: 20px 0px;
+}
+.grupos_palestras .grupo_info p{
+	font: normal 18px/1.5em "aller_regular", tahoma;
+	color: #fff;
+}
+.grupos_palestras .grupo_info ul li{
+	font: normal 16px/1.5em "aller_regular", tahoma;
+	color: #fff;
+	margin: 15px 0px;
+	padding-left:15px;
+}
+
+.grupo h3 {
+	margin: 60px 15px 20px;
+	font: normal 18px/1.5em "aller_regular", tahoma;
+	color: #FFF;	
+}

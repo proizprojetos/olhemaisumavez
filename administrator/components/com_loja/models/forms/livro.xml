@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_livro">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo do livro"
+			description="Titulo do livro"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="isbn"
+			type="text"
+			class="inputbox"
+			label="ISBN"
+			description="ISBN do livro."
+		/>
+		<field 
+			name="ano"
+			type="text"
+			class="inputbox"
+			label="Ano"
+			description="Ano de lançamento do livro."
+		/>
+		<field 
+			name="edicao"
+			type="text"
+			class="inputbox"
+			label="Edição"
+			description="Edição do livro."
+		/>
+		<field 
+			name="sinopse"
+			type="editor"
+			class="inputbox"
+			label="Sinopse do livro"
+			description="Sinopse do livro."
+			filter="safehtml"
+		/>
+		
+		<field 
+			name="id_editora" 
+			type="editora" 
+			label="Editora do livro" 
+			description="Qual a editora deste livro?"
+			class="inputbox" 
+			required="true"
+			addfieldpath="/administrator/components/com_loja/models/fields"
+		/>
+		<field 
+			name="valor"
+			type="text"
+			class="inputbox"
+			label="Preço do livro"
+			description="Preço do livro, separado por ponto as casas decimais."
+		/>
+		<field
+			name="fretegratis"
+			type="radio"
+			class="radio btn-group"
+			label="Possui frete gratis?"
+			default="0"
+			description="Se o livro tera a opção de frete gratis"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		<field
+			name="combo"
+			type="radio"
+			class="radio btn-group"
+			label="É um combo?"
+			default="0"
+			description="Se o livro é um combo composto por mais de um livro"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		
+		<field
+			name="imagem_capa"
+			type="media"
+			class="inputbox"
+			label="Imagem da capa do livro"
+			description="Imagem da capa do livro"
+			required="true"
+		/>
+		
+		<field 
+			name="paginas"
+			type="integer"
+			label="Páginas"
+			decription='Numero de páginas que o livro tem'
+			first='1'
+			last='2000'
+			step='1'
+		/>
+		<field 
+			name="estoque"
+			type="integer"
+			label="Estoque"
+			decription='Quantidade de livros em estoque'
+			first='1'
+			last='5000'
+			step='1'
+		/>
+		<field
+			name="inicio_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Inicio da publicação"
+			description="A partir de que dia o livro será visivel?"
+			required="true"
+		/>
+		<field
+			name="fim_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Fim da publicação"
+			description="Até que dia o livro será visivel?"
+			required="true"
+			default="05-10-2020"
+		/>
+			
+		<field name="autor" type="hidden" />
+	</fieldset>
+</form>

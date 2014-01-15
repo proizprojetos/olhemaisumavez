@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_editora">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="nome"
+			type="text"
+			class="inputbox"
+			label="Nome da editora"
+			description="Nome da editora"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="telefone"
+			type="text"
+			class="inputbox"
+			label="Telefone da editora"
+			description="Telefone da editora"
+			size="12"
+			default=""
+		/>
+		<field 
+			name="endereco"
+			type="text"
+			class="inputbox"
+			label="Endereco da editora"
+			description="Endereco da editora"
+			size="80"
+			default=""
+		/>
+		<field 
+			name="url_website"
+			type="text"
+			class="inputbox"
+			label="Site da editora"
+			description="Site da editora"
+			size="80"
+			default=""
+		/>
+		
+		<field 
+			name="cidade"
+			type="text"
+			class="inputbox"
+			label="Cidade da editora"
+			description="Cidade da editora"
+			size="50"
+			default=""
+		/>
+		<field 
+			name="estado"
+			type="list"
+			class="radio btn-group"
+			label="Estado da editora"
+			description="Estado da editora"
+			default='PR'
+		>
+			<option value="AL">Alagoas</option>
+			<option value="AP">Amapá</option>
+			<option value="AM">Amazonas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="DF">Distrito Federal</option>
+			<option value="GO">Goiás</option>
+			<option value="ES">Espírito Santo</option>
+			<option value="MA">Maranhão</option>
+			<option value="MT">Mato Grosso</option>
+			<option value="MS">Mato Grosso do Sul</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="PA">Pará</option>
+			<option value="PB">Paraiba</option>
+			<option value="PR">Paraná</option>
+			<option value="PE">Pernambuco</option>
+			<option value="PI">Piauí­</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="RN">Rio Grande do Norte</option>
+			<option value="RS">Rio Grande do Sul</option>
+			<option value="RO">Rondônia</option>
+			<option value="RR">Roraima</option>
+			<option value="SP">São Paulo</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="SE">Sergipe</option>
+			<option value="TO">Tocantins</option>
+		</field>
+		<field 
+			name="descricao"
+			type="text"
+			class="inputbox"
+			label="Descrição"
+			description="Uma breve descrição da editora"
+			size="40"
+			default=""
+		/>
+	</fieldset>
+</form>

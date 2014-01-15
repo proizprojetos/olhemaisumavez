@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_oficina">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo da oficina"
+			description="Titulo que ira aparecer na tab"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="intro"
+			type="editor"
+			class="inputbox"
+			label="Texto de introdução da oficina"
+			description="Texto de introdução da oficina"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="texto"
+			type="editor"
+			class="inputbox"
+			label="Texto da oficina"
+			description="Texto de explicação da oficina"
+			size="255"
+		/>
+		<field
+			name="url_proposta"
+			type="media"
+			class="inputbox"
+			label="Arquivo da proposta para donwload"
+			description="Arquivo da proposta para donwload"
+		/>
+		
+		<field 
+			name="organizada"
+			type="text"
+			class="inputbox"
+			label="Organizada por"
+			description="Quem irá organizar a oficina"
+			size="150"
+			
+		/>
+		<field 
+			name="duracao"
+			type="text"
+			class="inputbox"
+			label="Duração da oficina"
+			description="A duração que a oficina irá ter."
+		/>	
+		
+		<field
+			name="ativo"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar Oficina?"
+			default="1"
+			description="Se a oficina será mostrada ou não na pagina"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

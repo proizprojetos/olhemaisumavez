@@ -1,0 +1,5 @@
+RewriteEngine On #Liga o mecanismo de reescrita (mod_rewrite)
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?s=$1
+

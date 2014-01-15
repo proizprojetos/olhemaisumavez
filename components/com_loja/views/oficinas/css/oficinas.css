@@ -1,0 +1,120 @@
+li:focus, a:focus {
+	outline: none !important;	
+}
+.capa_oficinas img {
+	width: 100%;	
+}
+.corpo_oficinas {
+	margin-top: 25px;
+}	
+.tabs_oficinas ul {
+	display: table;
+	text-align: left;
+	margin: 0;
+	width:100%;
+	border-bottom: 2px solid #e6e7e8;
+	background: #fbfbfb;
+	
+}
+.tabs_oficinas ul li {
+	list-style: none;
+	float: left;
+	position: relative;
+	margin: 0px 10px -2px 0px;
+	padding: 10px 10px 10px 10px;
+}
+.tabs_oficinas ul .ui-tabs-active {
+	border: 2px solid #e6e7e8 ;
+	border-bottom: 2px solid #fff;
+}
+.tabs_oficinas ul li a, .tabs_oficinas ul li a:hover {
+	font: normal 16px/1.5em "aller_regular",Tahoma;
+	color:#4aa0dc;
+	text-decoration:none;
+}
+.tabs_oficinas .tab_oficina {
+	border: 2px solid #e6e7e8;
+	border-top: none;
+	padding: 20px 15px 20px 15px;	
+}
+
+.corpo_oficinas .tab_oficina .intro_oficina {
+	font: normal 30px/1.4em "aller_regular",Tahoma;
+	color:#4aa0dc;	
+	padding-right:20px;
+}
+.corpo_oficinas .tab_oficina .texto_oficina {
+	font: normal 16px/1.9em "aller_regular",Tahoma;
+	color:#838383;	
+	padding-right:40px;
+}
+.linha_azul {
+	border-top: 1px solid #b4d7ef;	
+	border-bottom: 1px solid #91c4e8;
+	margin: 10px 0px;
+}
+.corpo_oficinas .tab_oficina {
+	background:#fbfbfb;	
+}
+.corpo_oficinas .tab_oficina .proposta_oficina {
+	text-align:center;	
+}
+.corpo_oficinas .tab_oficina .proposta_oficina a {
+	font: normal 14px/1.4em "aller_regular",Tahoma;
+	color: #838383;
+	text-decoration:underline;
+}
+.corpo_oficinas .tab_oficina h4 {
+	font: normal 18px/1.4em "aller_regular",Tahoma;
+	color: #4aa0dc;
+}
+.corpo_oficinas .tab_oficina h3{
+	font: normal 16px/1.4em "aller_regular",Tahoma;
+	color: #838383;
+}
+.corpo_oficinas .tab_oficina .duracao_oficina{
+	margin-bottom:20px;	
+}
+
+
+/*Formulario*/
+.formularios_oficinas .formulario h3 {
+	font: normal 24px/1.4em "aller_regular",Tahoma;
+	color: #838383;
+	padding-right: 100px;
+}
+.formularios_oficinas .formulario h4{
+	font: normal 18px/1.4em "aller_regular",Tahoma;
+	color: #838383;
+	padding-right:85px;
+}
+.formularios_oficinas .formulario .radio_oficinas {
+	display:inline-block;
+	margin:15px 0px;
+}
+.formularios_oficinas .formulario .radio_oficinas .check_item {
+	float:left;
+	margin-right: 10px;
+	
+}
+.formularios_oficinas .formulario .radio_oficinas .check_item input[type="checkbox"] {
+	margin:0px;
+	margin-top: -3px;
+	margin-right: 10px;
+}
+.formularios_oficinas .formulario .formulario_entrada input[type="text"], .formularios_oficinas .formulario .formulario_entrada textarea {
+	border-radius: 0px;
+	border: 1px solid #000;		
+	margin: 5px 0px;
+	color:#000;
+	padding:5px 10px;
+}
+.formularios_oficinas .formulario .formulario_entrada textarea {
+	resize: none;
+	width:75%;
+	height:200px
+}
+.formularios_oficinas .formulario .formuario_enviar {
+	text-align:right;
+	padding-right:120px;
+}		

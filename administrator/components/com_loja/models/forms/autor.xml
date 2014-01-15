@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_autor">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="nomecompleto"
+			type="text"
+			class="inputbox"
+			label="Nome do autor"
+			description="Nome completo do autor"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="telefone"
+			type="text"
+			class="inputbox"
+			label="Telefone do autor"
+			description="Telefone do autor"
+			size="12"
+			default=""
+		/>
+		<field 
+			name="email"
+			type="text"
+			class="inputbox"
+			label="Email"
+			description="Email do autor"
+			size="80"
+			default=""
+		/>
+		<field 
+			name="url_website"
+			type="text"
+			class="inputbox"
+			label="Site da editora"
+			description="Site da editora"
+			size="80"
+			default=""
+		/>
+		<field 
+			name="sobre"
+			type="editor"
+			class="inputbox"
+			label="Sobre o autor"
+			description="Uma descrição sobre o autor, que irá aparecer no site."
+			filter='safehtml'
+		/>	
+	</fieldset>
+</form>

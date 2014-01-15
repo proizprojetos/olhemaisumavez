@@ -1,0 +1,5 @@
+div#toolbar-box{display:none;}
+.gcore-toolbar{background:none !important; border: 0 none !important;}
+header.header{display:none;}
+div.subhead-collapse{display:none;}
+.gcore-toolbar-box{padding-top:5px;}
