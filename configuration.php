@@ -12,9 +12,9 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
-	public $host = 'localhost';
-	public $user = 'root';
-	public $password = '';
+	public $host = '192.168.1.100';
+	public $user = 'admin';
+	public $password = 'admin';
 	public $db = 'lw1361815604511';
 	public $dbprefix = 'omuz_';
 	public $live_site = '';
