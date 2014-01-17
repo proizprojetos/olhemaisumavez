@@ -17,6 +17,7 @@ abstract class LojaHelper {
 		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_LIVROS'), 'index.php?option=com_loja&view=livros', $view == 'livros' || $view == 'livro');
 		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_EBOOKS'), 'index.php?option=com_loja&view=ebooks', $view == 'ebooks' || $view == 'ebook');
 		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_OFICINAS'), 'index.php?option=com_loja&view=oficinas', $view == 'oficinas' || $view == 'oficina');
+		JSubMenuHelper::addEntry('Gerenciar Comentários', 'index.php?option=com_loja&view=comentarios', $view == 'comentarios' || $view == 'comentarios');
 	}
 	
 	public static function gravaLog($mensagem) {

@@ -320,15 +320,15 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php'; // load logic.php
                 <div class="menu_superior_principal" style="display: block;">
             <div class="menu">
                  <ul class="nav menu">
-                 	<li class="item-121"><a href="/olhemaisumavez/index.php/palestras">Palestras</a></li>
-                 	<li class="item-119"><a href="/olhemaisumavez/index.php/oficinas">Oficinas</a></li>
-                    <li class="item-120"><a href="/olhemaisumavez/index.php/coaching">Coaching</a></li>
-                    <li class="item-120"><a href="/olhemaisumavez/index.php/loja">Loja</a></li>
-                    <li class="item-120"><a href="/olhemaisumavez/index.php/contato">Contato</a></li>
-                    <li class="item-122 deeper parent"><a href="/olhemaisumavez/index.php/blogs">Blogs</a>
+                 	<li class="item-121"><a href="/vendas/index.php/palestras">Palestras</a></li>
+                 	<li class="item-119"><a href="/vendas/index.php/oficinas">Oficinas</a></li>
+                    <li class="item-120"><a href="/vendas/index.php/coaching">Coaching</a></li>
+                    <li class="item-120"><a href="/vendas/index.php/livros">Loja</a></li>
+                    <li class="item-120"><a href="/vendas/index.php/contato">Contato</a></li>
+                    <li class="item-122 deeper parent"><a href="/vendas/index.php/blogs">Blogs</a>
                     	<ul class="nav-child unstyled small">
-                        	<li class="item-123"><a href="/olhemaisumavez/index.php/blogs/facetas">Facetas</a></li>
-                            <li class="item-124"><a href="/olhemaisumavez/index.php/blogs/olhe-mais-uma-vez">Olhe mais uma vez</a></li>
+                        	<li class="item-123"><a href="/vendas/index.php/blogs/facetas">Facetas</a></li>
+                            <li class="item-124"><a href="/vendas/index.php/blogs/olhe-mais-uma-vez">Olhe mais uma vez</a></li>
                         </ul>
                     </li>
                  </ul>

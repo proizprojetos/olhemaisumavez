@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_comentario">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="comentario"
+			type="text"
+			class="inputbox"
+			label="Comentario"
+			description="Comentario que ira aparecer"
+			size="255"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="autor"
+			type="text"
+			class="inputbox"
+			label="Autor do comentario"
+			description="Autor do comentario"
+			size="150"
+			required="true"
+			
+		/>		
+		<field
+			name="status"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar Oficina?"
+			default="1"
+			description="Se a oficina será mostrada ou não na pagina"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		
+		<field
+			name="pagina_ref"
+			type="radio"
+			class="radio btn-group"
+			label="Pagina que ira o comentario"
+			default="P"
+			description="Em qual página esse comentario sera apresentado?"
+		>
+			<option value="P">Palestras</option>
+			<option value="C">Coaching</option>
+		</field>
+		
+	</fieldset>
+</form>
