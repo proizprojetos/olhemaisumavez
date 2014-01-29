@@ -143,11 +143,35 @@ As palestras apresentam uma linguagem simples e objetiva, envolvendo a razão e 
             </div>
         </div>
      </div>
-        <div class="row">
-        	<div class="span12 palestra_mensagemfinal">
-            	<p>
-                	Durante as palestras são desenvolvidas algumas atividades que levam a reflexão sobre a importância do trabalho em equipe, da busca pela harmonia no convívio social, assim como sobre a importância do alinhamento estratégico entre os objetivos pessoais e organizacionais. A linguagem é simples e objetiva, envolvendo a razão e a emoção rumo a reflexão que o despertará para as ações que impactam nos resultados.
-                </p>
-            </div>
-        </div>    
+     <div class="row">
+     	<div class="span12 palestra_mensagemfinal">
+         	<p>
+             	Durante as palestras são desenvolvidas algumas atividades que levam a reflexão sobre a importância do trabalho em equipe, da busca pela harmonia no convívio social, assim como sobre a importância do alinhamento estratégico entre os objetivos pessoais e organizacionais. A linguagem é simples e objetiva, envolvendo a razão e a emoção rumo a reflexão que o despertará para as ações que impactam nos resultados.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+    	<hr class="linha_azul2">
+	<div class="slider-texto">
+		<h2> Comentários de quem já participou</h2>	
+		<div class="liquid-slider" id="slider-id">
+			<div>
+				<span class="msg-slider">
+					Slide 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis tincidunt urna vel imperdiet. Donec sagittis euismod neque quis imperdiet. Nulla risus quam
+				</span>
+				<p>Fulano da silva</p> 
+			</div>
+			<div>
+				Slide 2
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis tincidunt urna vel imperdiet. Donec sagittis euismod neque quis imperdiet. Nulla risus quam, 
+				
+			</div>
+			<div>
+				Slide 3
+			</div>			
+		</div>
+	</div>
+	<hr class="linha_azul2">
+    </div>
+        
 </div>

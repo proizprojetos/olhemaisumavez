@@ -1,5 +1,5 @@
 
-$(function() {
+ $(document).ready(function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
 	  modal: true,
@@ -14,9 +14,19 @@ $(function() {
         duration: 400
       }
     });
+    
     $( "#palestrante_info" ).click(function() {
       $( "#dialog" ).dialog( "open" );
     });
+    
+    
+    //Efeito slider de texto
+    $('#slider-id').liquidSlider({
+        autoSlide:true,
+        continuous:true,
+        keyboardNavigation: true        
+    });
+    
  });
  
  

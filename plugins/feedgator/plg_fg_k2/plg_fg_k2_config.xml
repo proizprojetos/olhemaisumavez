@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form type="plugin" group="feedgator">
+ <name>FeedGator - K2 Content Plugin</name>
+ <author>Matt Faulds</author>
+ <creationDate>Sept 2010</creationDate>
+ <updatedDate>25 August 2013</updatedDate>
+ <copyright>Copyright 2010 Trafalgar Design</copyright>
+ <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+ <authorEmail>matt@trafalgardesign.com</authorEmail>
+ <authorUrl>http://www.trafalgardesign.com</authorUrl>
+ <version>3.0.1</version>
+ <config>
+	<fieldset name="params" addfieldpath="/plugins/system/plg_sys_feedgator/fields">
+		<field name="save_k2_image" type="list" default="0" label="PLG_FG_K2_SAVE_K2_IMAGE" description="PLG_FG_K2_SAVE_K2_IMAGE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="save_tags" type="list" default="0" label="PLG_FG_K2_SAVE_TAGS" description="PLG_FG_K2_SAVE_TAGS_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="add_tags" type="list" default="0" label="PLG_FG_K2_ADD_TAGS" description="PLG_FG_K2_ADD_TAGS_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	</fieldset>
+  </config>
+</form>

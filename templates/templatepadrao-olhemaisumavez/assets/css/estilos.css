@@ -28,11 +28,14 @@ body {
 	padding: 0px;
 }
 * {
-	outline: none;	
+	outline: none !important;	
+}
+a:hover, a:focus {
+	text-decoration: none !important;
 }
 #corpo {
 	min-height: 100%;
-	margin-bottom: 5%;
+	/*margin-bottom: 5%;*/
 	margin-top: 50px;
 }
 
@@ -96,9 +99,9 @@ body {
 .rodape_fundo {
 	background: #748eaa;
 	padding: 40px 0px 10px 0px;
-	/*position: fixed;*/
-	left: 0px;
+	/*position: static;*/
 	bottom: 0px;
+	left: 0px;
 	width: 100%;
 }
 .rodape {
@@ -119,7 +122,7 @@ body {
 	margin: 5px 0px;
 }
 
-.rodape .subitem {
+.rodape .subitem a {
 	font: normal 13px 'aller_regular', Tahoma;
 	color: #000;
 }

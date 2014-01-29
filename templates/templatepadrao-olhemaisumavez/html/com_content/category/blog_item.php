@@ -103,11 +103,7 @@ JHtml::_('behavior.framework');
             </ul>
         </div>
         <?php } ?>
-        <div class="blog_item_comentarios">
-        	<h3 class="sub_titulo">Comentarios</h3>
-            <div class="fb-comments" data-href="<?php echo 'http://www.olhemaisumavez.com.br'.$link ?>" data-numposts="10" data-width:"660">
-			</div>
-        </div>
+        
         <?php if ($useDefList) : ?>
             <?php echo JLayoutHelper::render('joomla.content.info_block.block', array('item' => $this->item, 'params' => $params, 'position' => 'below')); ?>
         <?php  endif; ?>
@@ -146,6 +142,10 @@ JHtml::_('behavior.framework');
         <?php endif; ?>
         
         <?php echo $this->item->event->afterDisplayContent; ?>
-    
+    	<div class="blog_item_comentarios">
+        	<h3 class="sub_titulo">Comentarios</h3>
+            <div class="fb-comments" data-href="<?php echo 'http://www.olhemaisumavez.com.br'.$link ?>" data-numposts="10" data-width:"660">
+			</div>
+        </div>
     </div>
   

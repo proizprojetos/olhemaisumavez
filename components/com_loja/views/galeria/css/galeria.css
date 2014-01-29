@@ -1,0 +1,141 @@
+.rodape_fundo {
+	margin-top: 250px;
+}
+.galeria_menu {
+	margin:0px 0px 25px;
+}
+.galeria_menu li {
+	display: inline-block;
+	width: 115px;
+	padding: 5px 0px 5px 0px;
+	text-align: center;
+}
+.galeria_menu .ui-state-active {
+	background: #4aa0dd !important;
+}
+.galeria_menu .ui-state-default {
+	background: #9b9b9b;
+}
+.galeria_menu li a, .galeria_menu li a:hover {
+	font: normal 17px/1.5em "aller_bold", Tahoma;
+	color: #fff;
+	text-decoration: none;
+}
+
+/**carrossel dos grupos de imagens */
+.jcarousel {
+    position: relative;
+    overflow: hidden;    
+    background: #e5e5e5;
+    padding: 0px 50px;
+}
+.jcarousel .item img {
+	height: 110px;
+	width: 150px;
+	border: 8px solid #fff;
+}
+.jcarousel .item p {
+	margin:7.5px 0px;
+	color: #838383;
+	font: normal 15px 'aller_regular', Tahoma;
+}
+.jcarousel .item {
+	margin: 20px 7.5px;
+	text-align: center;
+}
+.jcarousel-next, .jcarousel-prev, .jcarousel-next:hover, .jcarousel-prev:hover {
+	top: -110px;
+	position: relative;
+	text-decoration: none;	
+}
+.jcarousel-next {
+	right: -1120px;
+	background: url('../images/seta_preta.png') no-repeat top right;	
+	color: transparent;
+	width: 16px;
+	height: 28px;
+	display: inline-block;
+	
+}
+.jcarousel-prev {
+	left: 20px;
+	background: url('../images/seta_preta.png') no-repeat top left;	
+	color: transparent;
+	width: 16px;
+	height: 28px;
+	display: inline-block;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
+.jcarousel .item {
+	cursor: pointer;
+}
+
+
+/*Slider show fotosw*/
+#slideshow, .container_video .video {
+	background: #323232;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+	height: 480px;
+}
+.item-slider img {
+	height: 100%;
+	width: 100%;
+}
+#slideshow img {
+	height: 480px;
+	width: 900px;
+}
+.item-slider {
+	display: inline-block;
+	width: 170px;
+	height: 120px;
+	border: 4px solid #4c4a4d;
+	border-radius: 5px;
+	margin: 5px 2px;
+}
+.item-ocultar {
+	display: none !important;
+}
+.item-mostrar {
+	display: inline-block !important;
+}
+
+.nav-controls .next {
+	left: 20px;
+	background: url('../images/seta_branca.png') no-repeat top right;	
+	color: transparent;
+	width: 16px;
+	height: 28px;
+	position: absolute;
+	margin-top: -300px;
+	margin-left: 1180px;
+}
+
+.nav-controls .prev {
+	left: 20px;
+	background: url('../images/seta_branca.png') no-repeat top left;	
+	color: transparent;
+	width: 16px;
+	height: 28px;
+	display: inline-block;
+	position: absolute;
+	margin-top: -300px;
+	margin-left: 150px;
+}

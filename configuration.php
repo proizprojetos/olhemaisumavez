@@ -53,8 +53,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = '/Users/luyzgarcia/Documents/Sites/www/olhemaisumavez/logs';
-	public $tmp_path = '/Users/luyzgarcia/Documents/Sites/www/olhemaisumavez/tmp';
+	public $log_path = '/var/www/olhemaisumavez/logs';
+	public $tmp_path = '/var/www/olhemaisumavez/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $MetaRights = '';

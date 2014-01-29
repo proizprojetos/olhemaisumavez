@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_galeriaimagem">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo"
+			description="Titulo da imagem"
+			required="true"
+		/>
+		<field
+			name="url"
+			type="media"
+			class="inputbox"
+			label="Imagem"
+			description="Imagem"
+			required="true"
+		/>
+		<field
+			name="status"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar Video?"
+			default="1"
+			description="Se a oficina será mostrada ou não na pagina"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		
+		<field 
+			name="id_categoria" 
+			type="galeriacategoria" 
+			label="Categoria da imagem" 
+			description="Qual a categoria que esta imagem pertenece?"
+			class="inputbox" 
+			required="true"
+			addfieldpath="/administrator/components/com_loja/models/fields"
+		/>
+		
+	</fieldset>
+</form>

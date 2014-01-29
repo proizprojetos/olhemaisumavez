@@ -29,15 +29,19 @@
 .livro {
 	padding: 40px 0px;
 }
-.livro img {
+.livro .imagem_livro {
+	text-align: center;
+}
+.livro .imagem_livro img {
+	width: 200px;	
+	cursor: hand;
+}
+.detalhe .imagem_livro img {
 	width: 270px;
 }
 .livro h2 {
 	font: normal 20px 'aller_regular', Tahoma;
 	color: #838383;
-}
-.ficha_livro {
-	
 }
 .livro hr {
 	margin-bottom: 0px;
@@ -83,13 +87,16 @@
 	color: #838383;
 	text-align: center;
 }
-.ebooks .ld, .livro .descricao .ld {
+.ebooks .ld, .livro .ld {
 	background-color: #4aa0dc;
 	padding: 5px 15px;
 	display: inline-block;
 	text-transform: uppercase;
 	color: #fff;
 	font: normal 14px 'aller_regular', Tahoma;
+}
+.livro .ficha_livro h2, .livro .ficha_livro a:hover {
+	color: #000;
 }
 /*Fim do livros*/
 

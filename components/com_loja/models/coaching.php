@@ -23,19 +23,19 @@ class LojaModelCoaching extends JModelForm {
 		return $form;
 	}
 	
-	/*public function getListaoficinas() {
+	
+	public function getItem() {
+		
 		$db = JFactory::getDBO();
 		$query = $db->getQuery(true);
 		
-		$date = JFactory::getDate();
-		
-		$nowDate = $db->quote($date->toSql());
-		
-		$query->select('oficina.*')
-		->from('#__loja_oficinas oficina');
+		//Seleciona os campos
+		$query->select('p.*');
+		$query->from('#__loja_pagina_coaching p');
+		$query->where('p.pagina_ref = \'COA\'');
 		$db->setQuery((String) $query);
-		$oficinas = $db->loadObjectList();
+		$pagina = $db->loadObject();
 		
-		return $oficinas;
-	}*/
+		return $pagina;
+	}
 }

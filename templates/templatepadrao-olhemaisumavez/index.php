@@ -320,15 +320,15 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php'; // load logic.php
                 <div class="menu_superior_principal" style="display: block;">
             <div class="menu">
                  <ul class="nav menu">
-                 	<li class="item-121"><a href="/vendas/index.php/palestras">Palestras</a></li>
-                 	<li class="item-119"><a href="/vendas/index.php/oficinas">Oficinas</a></li>
-                    <li class="item-120"><a href="/vendas/index.php/coaching">Coaching</a></li>
-                    <li class="item-120"><a href="/vendas/index.php/livros">Loja</a></li>
-                    <li class="item-120"><a href="/vendas/index.php/contato">Contato</a></li>
-                    <li class="item-122 deeper parent"><a href="/vendas/index.php/blogs">Blogs</a>
+                 	<li class="item-121"><a href="<?php echo JURI::base() ?>index.php/palestras">Palestras</a></li>
+                 	<li class="item-119"><a href="<?php echo JURI::base() ?>index.php/oficinas">Oficinas</a></li>
+                    <li class="item-120"><a href="<?php echo JURI::base() ?>index.php/coaching">Coaching</a></li>
+                    <li class="item-120"><a href="<?php echo JURI::base() ?>index.php/livros">Loja</a></li>
+                    <li class="item-120"><a href="<?php echo JURI::base() ?>index.php/contato">Contato</a></li>
+                    <li class="item-122 deeper parent"><a href="<?php echo JURI::base() ?>index.php/blogs">Blogs</a>
                     	<ul class="nav-child unstyled small">
-                        	<li class="item-123"><a href="/vendas/index.php/blogs/facetas">Facetas</a></li>
-                            <li class="item-124"><a href="/vendas/index.php/blogs/olhe-mais-uma-vez">Olhe mais uma vez</a></li>
+                        	<li class="item-123"><a href="<?php echo JURI::base() ?>index.php/blogs/facetas">Facetas</a></li>
+                            <li class="item-124"><a href="<?php echo JURI::base() ?>index.php/blogs/olhe-mais-uma-vez">Olhe mais uma vez</a></li>
                         </ul>
                     </li>
                  </ul>
@@ -455,7 +455,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php'; // load logic.php
     
     <?php } ?>
 	<!-- Rodape -->
-	<footer class="rodape_fundo"> 
+	<div class="rodape_fundo"> 
 		<div class="container" />
 			<div class="row rodape">
 				<div class="span3 newsletter">
@@ -463,16 +463,19 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php'; // load logic.php
 					<jdoc:include type="modules" name="newsletter" />
 				</div>
 				<div class="span2">
-					 <jdoc:include type="modules" name="menu_inferior1" />
-					<ul>
-						<li><a href="/index.php">Pagina inicial</a></li>
-						<!--<li>O Palestrante</li>
-						<li>Oficinas</li>
-						<li>Coaching</li>
-						<li>Blogs</li>
-						<li class="subitem">Facetas</li>
-						<li class="subitem">Remar é preciso</li>	-->						
-					</ul>
+					<jdoc:include type="modules" name="menu_inferior1" />
+					<ul class="">
+                 	<li class="item-121"><a href="<?php echo JURI::base() ?>index.php/palestras">Palestras</a></li>
+                 	<li class="item-119"><a href="<?php echo JURI::base() ?>index.php/oficinas">Oficinas</a></li>
+                    <li class="item-120"><a href="<?php echo JURI::base() ?>index.php/coaching">Coaching</a></li>
+                    <li class="item-120"><a href="<?php echo JURI::base() ?>index.php/livros">Loja</a></li>
+                    <li class="item-120"><a href="<?php echo JURI::base() ?>index.php/contato">Contato</a></li>
+                    <li class=""><a href="<?php echo JURI::base() ?>index.php/blogs">Blogs</a></li>
+                    	
+                        	<li class="subitem"><a href="<?php echo JURI::base() ?>index.php/blogs/facetas">Facetas</a></li>
+                            <li class="subitem"><a href="<?php echo JURI::base() ?>index.php/blogs/olhe-mais-uma-vez">Olhe mais uma vez</a></li>
+
+                 </ul>
 				</div>
 				<div class="span2">
 					<jdoc:include type="modules" name="menu_inferior2" />
@@ -491,7 +494,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php'; // load logic.php
 				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
 	<!-- Fim do rodape -->
 	
   <jdoc:include type="modules" name="debug" /> 

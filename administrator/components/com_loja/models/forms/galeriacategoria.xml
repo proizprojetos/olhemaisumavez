@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_galeriacategoria">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="nome"
+			type="text"
+			class="inputbox"
+			label="Nome da categoria"
+			description="Nome que ira aparecer na tab"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="descricao"
+			type="text"
+			class="inputbox"
+			label="Descrição da categoria"
+			description="Uma breve descrição da categoria"
+			default=""
+			required="true"
+		/>
+		
+		<field
+			name="url_capa_categoria"
+			type="media"
+			class="inputbox"
+			label="Imagem da capa da categoria"
+			description="Imagem da capa da categoria"
+			required="true"
+		/>
+		
+		<field
+			name="tipo"
+			type="radio"
+			class="radio btn-group"
+			label="Fotos ou Videos?"
+			default="FOT"
+			description="Essa categoria é de fotos ou videos?"
+		>
+			<option value="FOT">Fotos</option>
+			<option value="VID">Videos</option>
+		</field>
+		
+		<field
+			name="status"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar categoria?"
+			default="1"
+			description="Se a oficina será mostrada ou não na pagina"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

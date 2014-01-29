@@ -82,6 +82,49 @@ class LojaModelLivros extends JModelForm {
 		return $livros;
 	}
 	
+	public function getLivroDetalhe() {
+		
+		$idlivro 	= JRequest::getVar('idlivro');
+			
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		
+		$query->select('livro.* ')
+		->from('#__loja_livros livro')
+		->where('(livro.id >= '.$idlivro.')'); 
+		$db->setQuery((String) $query);
+		$livro = $db->loadObject();
+		
+		$query->clear();
+		$query->select('autor.*');
+		$query->from('#__loja_autores autor');
+		$query->JOIN('INNER', '#__loja_livros_autores la on la.id_autor = autor.id and la.id_livro = '.$livro->id);
+		$db->setQuery((String) $query);
+		$autores = $db->loadObjectList();
+		$livro->autores = $autores; 
+		
+		return $livro;
+	}
+	
+	public function getLivroDetalheEbook() {
+		
+		$idlivro 	= JRequest::getVar('idlivro');
+			
+		$livro = $this->getLivro($idlivro);
+		
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		$query->clear();
+		$query->select('autor.*');
+		$query->from('#__loja_autores autor');
+		$query->JOIN('INNER', '#__loja_livros_autores la on la.id_autor = autor.id and la.id_livro = '.$livro->id);
+		$db->setQuery((String) $query);
+		$autores = $db->loadObjectList();
+		$livro->autores = $autores; 
+		
+		return $livro;
+	}
+	
 	public function getLivro($id) {
 
 		$db = JFactory::getDBO();

@@ -22,6 +22,15 @@ class LojaViewLivros extends JViewLegacy {
 			return false;
 		}
 		
+		if($this->getLayout() === 'detalhe') {
+			$this->livro = $this->get('LivroDetalhe');
+		}
+		
+		if($this->getLayout() === 'detalheebook') {
+			$this->livro = $this->get('LivroDetalheEbook');
+		}
+		
+		
 		$this->prepareDocument();	
 		
 		parent::display($tpl);
