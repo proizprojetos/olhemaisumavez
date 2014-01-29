@@ -123,3 +123,42 @@
 	font: normal 14px/1.5em "aller_regular", tahoma;
 	color: #fff;
 }
+
+/*Slider de texto*/
+.ls-wrapper {
+	height: 150px !important;
+	max-width: 100% !important;
+}
+.ls-wrapper .ls-nav-left-arrow, .ls-wrapper .ls-nav-right-arrow{
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+.ls-nav-left-arrow {
+	background: url(../img/arrow.png) no-repeat bottom left !important;
+}
+.ls-nav-right-arrow {
+	background: url(../img/arrow.png) no-repeat bottom right !important;
+} 
+.ls-wrapper .liquid-slider {
+	background: transparent !important;	
+	
+}
+.panel-wrapper {
+	padding: 20px 100px !important;
+}
+.slider-texto h2 {
+	font: normal 18px/1.5em "aller_regular", tahoma;
+	color: #4aa0dc;
+	margin: 0px;
+	text-align: center;
+}	
+.slider-texto .msg-slider {
+	font: normal 16px/2.2em "aller_italic", tahoma;
+	color: #838383;	
+	
+}
+.slider-texto p {
+	text-align: right;
+	font: normal 14px/1.5em "aller_italic", tahoma;
+	color: #4aa0dc;	
+}

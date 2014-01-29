@@ -11,8 +11,7 @@ class LojaViewPalestras extends JViewLegacy {
 	function display($tpl = null) {
 	
 		//Pega os dados da sessao
-		//$this->oficinas		= $this->get('listaoficinas');
-		
+		$this->comentarios		= $this->get('listacomentarios');
 		$this->prepareDocument();	
 		
 		parent::display($tpl);

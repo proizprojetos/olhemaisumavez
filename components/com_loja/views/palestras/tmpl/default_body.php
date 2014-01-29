@@ -150,28 +150,24 @@ As palestras apresentam uma linguagem simples e objetiva, envolvendo a razão e 
             </p>
         </div>
     </div>
-    <div class="row">
-    	<hr class="linha_azul2">
-	<div class="slider-texto">
-		<h2> Comentários de quem já participou</h2>	
-		<div class="liquid-slider" id="slider-id">
-			<div>
-				<span class="msg-slider">
-					Slide 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis tincidunt urna vel imperdiet. Donec sagittis euismod neque quis imperdiet. Nulla risus quam
-				</span>
-				<p>Fulano da silva</p> 
+    <?php if(!empty($this->comentarios)) { ?>
+	    <div class="row">
+	    	<hr class="linha_azul2">
+		   <div class="slider-texto">
+				<h2> Comentários de quem já participou</h2>	
+				<div class="liquid-slider" id="slider-id">
+					<?php foreach ($this->comentarios as $key => $value) { ?>
+						<div>
+							<span class="msg-slider">
+								<?php echo $value->comentario ?>
+							</span>
+							<p><?php echo $value->autor ?></p> 
+						</div>
+					<?php } ?>	
+				</div>
 			</div>
-			<div>
-				Slide 2
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis tincidunt urna vel imperdiet. Donec sagittis euismod neque quis imperdiet. Nulla risus quam, 
-				
-			</div>
-			<div>
-				Slide 3
-			</div>			
-		</div>
-	</div>
-	<hr class="linha_azul2">
-    </div>
+			<hr class="linha_azul2">
+	    </div>
+    <?php } ?>
         
 </div>

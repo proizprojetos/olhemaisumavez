@@ -24,7 +24,7 @@ class LojaModelPalestras extends JModelForm {
 		return $form;
 	}
 	
-	/*public function getListaoficinas() {
+	public function getListacomentarios() {
 		$db = JFactory::getDBO();
 		$query = $db->getQuery(true);
 		
@@ -32,11 +32,12 @@ class LojaModelPalestras extends JModelForm {
 		
 		$nowDate = $db->quote($date->toSql());
 		
-		$query->select('oficina.*')
-		->from('#__loja_oficinas oficina');
+		$query->select('comentario.*')
+		->from('#__loja_comentarios comentario')
+			->where('comentario.pagina_ref = \'P\'');
 		$db->setQuery((String) $query);
-		$oficinas = $db->loadObjectList();
+		$comentarios = $db->loadObjectList();
 		
-		return $oficinas;
-	}*/	
+		return $comentarios;
+	}	
 }

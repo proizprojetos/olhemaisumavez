@@ -19,6 +19,14 @@ $(function() {
     $( "#opener" ).click(function() {
       $( "#dialog" ).dialog( "open" );
     });
+    
+    //Efeito slider de texto
+    $('#slider-id').liquidSlider({
+        autoSlide:true,
+        continuous:true,
+        keyboardNavigation: true        
+    });
+    
  });
 
 $(function(){

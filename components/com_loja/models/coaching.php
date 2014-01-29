@@ -38,4 +38,21 @@ class LojaModelCoaching extends JModelForm {
 		
 		return $pagina;
 	}
+	
+	public function getListacomentarios() {
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		
+		$date = JFactory::getDate();
+		
+		$nowDate = $db->quote($date->toSql());
+		
+		$query->select('comentario.*')
+		->from('#__loja_comentarios comentario')
+			->where('comentario.pagina_ref = \'C\'');
+		$db->setQuery((String) $query);
+		$comentarios = $db->loadObjectList();
+		
+		return $comentarios;
+	}
 }

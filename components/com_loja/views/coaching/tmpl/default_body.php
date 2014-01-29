@@ -79,5 +79,24 @@ JHtml::_('behavior.formvalidation');
             </div>
         </div>    
     </div>
+    <?php if(!empty($this->comentarios)) { ?>
+	    <div class="row">
+	    	<hr class="linha_azul2">
+		   <div class="slider-texto">
+				<h2> Comentários de quem já participou</h2>	
+				<div class="liquid-slider" id="slider-id">
+					<?php foreach ($this->comentarios as $key => $value) { ?>
+						<div>
+							<span class="msg-slider">
+								<?php echo $value->comentario ?>
+							</span>
+							<p><?php echo $value->autor ?></p> 
+						</div>
+					<?php } ?>	
+				</div>
+			</div>
+			<hr class="linha_azul2">
+	    </div>
+    <?php } ?>
     
 </div>
