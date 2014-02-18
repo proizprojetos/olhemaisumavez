@@ -34,33 +34,6 @@ class LojaControllerPagina extends JControllerForm
 		
 		$dados = JRequest::getVar('jform', array(), 'post', 'array');
 		
-		/*$i = 1;
-		print_r(($_FILES['imagens']));
-		foreach ($_FILES['imagens']['name'] as $key => $value) {
-			//echo 'entrou'.$key.'<br/>';
-			//print_r($value);
-			if(!empty($value)) {
-				$extensao 		= pathinfo($_FILES['imagens']['name']['imagem'.$i.'_maisinformacoes'], PATHINFO_EXTENSION);
-				$nomearquivo 	= 'Imagem_palestrante_'.$i.'.'.$extensao; 
-				$caminho 		= JPATH_SITE.DIRECTORY_SEPARATOR.'media'.DIRECTORY_SEPARATOR.$nomearquivo;
-				$arquivo		= $_FILES['imagens']['tmp_name']['imagem'.$i.'_maisinformacoes'];
-				$imagens['imagem_'.$i] = $caminho;
-				if(!JFile::upload($arquivo, $caminho)) 
-				{
-						print_r($_FILES['imagens']['error']);
-						return;
-				}
-				$i= $i+1;
-			}
-		}
-		//print_r($imagens);
-		
-		//print_r($imagens);
-		//echo '<br/><br/>';
-		$dados['imagens_maisinformacoes'] = json_encode($imagens);
-		//print_r($dados);
-		 * 
-		 */
 		$model = $this->getModel('pagina', 'LojaModel');
 		
 		$retorno = $model->salvar($dados,'palestras','PAL');
