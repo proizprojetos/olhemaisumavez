@@ -14,6 +14,8 @@ class LojaViewCoaching extends JViewLegacy {
 		$this->item		= $this->get('item');
 		$this->comentarios		= $this->get('listacomentarios');
 		
+		$this->dadosCurriculo	= $this->get('dadosCurriculo');
+		
 		$this->prepareDocument();	
 		
 		parent::display($tpl);

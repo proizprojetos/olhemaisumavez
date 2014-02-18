@@ -1,9 +1,9 @@
 
 $(function() {
-    $( "#dialog" ).dialog({
+    $( "#dialog, #dialog_curriculo" ).dialog({
       autoOpen: false,
 	  modal: true,
-	  width: 685,
+	  width: 900,
 	  closeText: "FECHAR",
 	  position: 'top',
       show: {
@@ -18,6 +18,9 @@ $(function() {
  
     $( "#opener" ).click(function() {
       $( "#dialog" ).dialog( "open" );
+    });
+    $( "#opener_curriculo" ).click(function() {
+      $( "#dialog_curriculo" ).dialog( "open" );
     });
     
     //Efeito slider de texto

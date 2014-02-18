@@ -55,4 +55,25 @@ class LojaModelCoaching extends JModelForm {
 		
 		return $comentarios;
 	}
+	
+	public function getDadosCurriculo() {
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		
+		$date = JFactory::getDate();
+		
+		$nowDate = $db->quote($date->toSql());
+		/**
+		 * $query->select('p.*');
+		$query->from('#__loja_pagina_palestras p');
+		$query->where('p.pagina_ref = \'PAL\'');
+		 */
+		$query->select('p.texto_maisinformacoes')
+		->from('#__loja_pagina_palestras p')
+			->where('p.pagina_ref = \'PAL\'');
+		$db->setQuery((String) $query);
+		$dados = $db->loadObject();
+		
+		return $dados;
+	}
 }

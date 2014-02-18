@@ -79,15 +79,6 @@ display: inline-block;
 	color: #484848;	
 	padding-right: 50px;	
 }
-.palestras .palestrante .palestrante_info button{
-	font: normal 14px/2em "aller_regular", tahoma;
-	color: #484848;	
-	border:none;
-	text-decoration:underline;
-	margin:0px;
-	padding:0px;
-	background:none;
-}
 .palestras .palestrante .palestrante_foto {
 	width:230px;	
 	float:left;
@@ -105,32 +96,6 @@ display: inline-block;
 	width: 49%;
 	float: left;	
 }
-#dialog .info_palestras span {
-	font: normal 24px/1.5em "aller_regular", tahoma;
-	color: #4aa0dc;
-}
-
-#dialog .info_palestras p, #dialog .info_palestras a, #dialog .info_palestras a:hover {
-	font: normal 14px/1.8em "aller_regular", tahoma;
-	color: #484848;		
-	text-decoration:none;
-}
-#dialog .info_palestras h5{
-	font: normal 18px/1.5em "aller_regular", tahoma;
-	color: #838383;
-}
-#dialog .fotos_palestrante {
-	display: block;
-	float: left;
-	height: 1000px;
-	width: 320px;
-}
-#dialog .fotos_palestrante img{
-	margin: 0px 25px 25px 25px;
-	width: 250px;
-	height: 180px;
-}
-
 
 .grupos_palestras .grupo {
 	background:#4aa0dc;

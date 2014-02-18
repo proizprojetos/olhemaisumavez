@@ -142,16 +142,16 @@ JHtml::_('behavior.formvalidation');
                     <p><?php echo $this->item->texto_palestrante; ?></p>
                     <button id="palestrante_info">Mais informações</button>
                 </div>
-                <div id="dialog">
-                <div class="fotos_palestrante">
-                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto1.png" alt="" />
-                  	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto2.png" alt="" />
-                    <img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto3.png" alt="" />                
-                </div>
-                <div class="info_palestras">
-                    <?php echo $this->item->texto_maisinformacoes; ?>
-                </div> 
-            </div>
+                <div id="dialog" class="dialog">
+	                <div class="fotos_palestrante">
+	                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto1.png" alt="" />
+	                  	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto2.png" alt="" />
+	                    <img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto3.png" alt="" />                
+	                </div>
+	                <div class="info_palestras">
+	                    <?php echo $this->item->texto_maisinformacoes; ?>
+	                </div> 
+            	</div>
                 <div class="palestrante_foto">
                 	 <img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto.png" alt=""/>
                 </div>

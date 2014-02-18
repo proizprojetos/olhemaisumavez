@@ -22,8 +22,18 @@ JHtml::_('behavior.formvalidation');
             	<p><b>Moacir Rauber</b>, formação internacional em Coaching Executivo Organizacional com ênfase na Metodologia Ontológica Transformacional reconhecido pela FIACE (Federación Ibero Americana de Coaching Ejecutivo). O trabalho se desenvolve tendo em mente o uso de técnicas que proporcionem ao coachee a possibilidade de redesenhar as formas de intervenção no seu ambiente, promovendo e implementando uma nova realidade. 
                 <br/> <br/>
                 <span>
-                	<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.jsp?id=K4758838Z4" target="_blank">Currículo lattes</a>
+                	<button id="opener_curriculo" class="botao_dialog">Mais informações</button>
                 </span>
+                <div id="dialog_curriculo" class="info_curriculo dialog">
+                	<div class="fotos_palestrante">
+	                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto1.png" alt="" />
+	                  	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto2.png" alt="" />
+	                    <img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto3.png" alt="" />                
+	                </div>
+	                <div class="info_palestras">
+	                	<?php echo $this->dadosCurriculo->texto_maisinformacoes ?>
+	                </div>            		
+	            </div>
                 </p>
                 
             </div>
