@@ -9,11 +9,11 @@ class LojaModelPagina extends JModelAdmin {
 	protected $data;
 	
 	public function getTable($type="Pagina", $prefix="LojaTable", $config=array() ) {
+
 		return JTable::getInstance($type, $prefix, $config);	
 	}
 	
 	public function getForm($data = array(), $loadData = true) {
-	
 		$form = $this->loadForm('com_loja.pagina', 'pagina', array('control' => 'jform', 'load_data' =>$loadData));
 		
 		if(empty($form)) {
@@ -22,20 +22,23 @@ class LojaModelPagina extends JModelAdmin {
 		return $form;		
 	}
 	
-	/**
-	*	Método responsavel por pegas os dados que serão injetados no formulario
+	
+	//*	Método responsavel por pegas os dados que serão injetados no formulario
 	
 	protected function loadFormData() 
 	{
+		
 		// Check the session for previously entered form data.
 		$data = JFactory::getApplication()->getUserState('com_loja.edit.pagina.data', array());
+		//print_r($data);
 		if (empty($data)) 
 		{
 			$data = $this->getItem();
 		}
+		JFactory::getApplication()->setUserState('com_loja.edit.pagina.data', array());
 		return $data;
 	}
-	*/
+	
 	public function salvar($data,$pagina,$pagina_ref)
 	{
 		

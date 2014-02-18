@@ -97,7 +97,7 @@
 }
 #slideshow img {
 	height: 480px;
-	width: 900px;
+	width: 75%;
 }
 .item-slider {
 	display: inline-block;
@@ -115,24 +115,58 @@
 }
 
 .nav-controls .next {
-	left: 20px;
 	background: url('../images/seta_branca.png') no-repeat top right;	
 	color: transparent;
 	width: 16px;
 	height: 28px;
-	position: absolute;
-	margin-top: -300px;
-	margin-left: 1180px;
+	position: relative;
+	top: -300px;
+	margin-left: 85%;
+	display: inline-block;
 }
 
 .nav-controls .prev {
-	left: 20px;
 	background: url('../images/seta_branca.png') no-repeat top left;	
 	color: transparent;
 	width: 16px;
 	height: 28px;
 	display: inline-block;
-	position: absolute;
-	margin-top: -300px;
-	margin-left: 150px;
+	position: relative;
+	top: -300px;
+	margin-left: 60px;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 75%;
+    padding: 6% 10%;
+}
+
+#carregando {
+	opacity:0;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	height: 250px;
+	top: -200px;
+	margin-bottom: -200px;
+}
+
+.carregando img {
+	width: 50px;
+	height: 50px;
+	margin-top: 100px;
 }

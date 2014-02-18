@@ -31,10 +31,14 @@
 }
 .livro .imagem_livro {
 	text-align: center;
+	width: 250px;
+	height: 250px;
 }
 .livro .imagem_livro img {
-	width: 200px;	
+	width: 230px;
+	height: 100%;	
 	cursor: hand;
+	
 }
 .detalhe .imagem_livro img {
 	width: 270px;

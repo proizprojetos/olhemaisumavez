@@ -74,6 +74,18 @@
 		</field>
 		
 		<field
+			name="tipo"
+			type="radio"
+			class="radio btn-group"
+			label="Tipo do livro(ebook ou audio book)?"
+			default="EBO"
+			description="Se o livro será um ebook ou um audio book"
+		>
+			<option value="EBO">Ebook</option>
+			<option value="AUD">Audio book</option>
+		</field>
+		
+		<field
 			name="imagem_capa"
 			type="media"
 			class="inputbox"

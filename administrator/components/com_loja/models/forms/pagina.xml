@@ -24,4 +24,193 @@
 			filter="safehtml"
 		/>
 	</fieldset>
+	
+	
+	
+	<fieldset name="detalhes_palestras">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="mensagem_inicial"
+			type="text"
+			class="inputbox"
+			label="Mensagem inicial"
+			size="40"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="autor_msg_inicial"
+			type="text"
+			class="inputbox"
+			label="O autor da Mensagem inicial"
+			size="40"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="texto_palestrante"
+			type="text"
+			class="inputbox"
+			label="Texto referente ao palestrante"
+			size="100"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="texto_maisinformacoes"
+			type="editor"
+			class="inputbox"
+			label="Texto do link mais informacoes"
+			description="Texto do link mais informacoes"
+			filter="safehtml"
+		/>
+		
+	</fieldset>
+	<fieldset name="detalhes_palestras_vendas">
+		<field 
+			name="vendas_titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo"
+			size="100"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="vendas_texto"
+			type="editor"
+			class="inputbox"
+			label="Texto que ira no vendas"
+			description="Texto que ira no vendas"
+			filter="safehtml"
+		/>
+		<field
+			name="vendas_link"
+			type="media"
+			class="inputbox"
+			label="Link para um arquivo com mais informaceos"
+			description="Link para um arquivo com mais informaceos"
+			required="true"
+		/>
+	</fieldset>
+	<fieldset name="detalhes_palestras_superacao">
+		<field 
+			name="superacao_titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo"
+			size="100"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="superacao_texto"
+			type="editor"
+			class="inputbox"
+			label="Texto que ira no superação e motivação"
+			description="Texto que ira no superação e motivação"
+			filter="safehtml"
+		/>
+		<field
+			name="superacao_link"
+			type="media"
+			class="inputbox"
+			label="Link para um arquivo com mais informaceos"
+			description="Link para um arquivo com mais informaceos"
+			required="true"
+		/>
+	</fieldset>
+	<fieldset name="detalhes_palestras_emp">
+		<field 
+			name="empreendedorismo_titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo"
+			size="100"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="empreendedorismo_texto"
+			type="editor"
+			class="inputbox"
+			label="Texto que ira no Empreendedorismo"
+			description="Texto que ira no Empreendedorismo"
+			filter="safehtml"
+		/>
+		<field
+			name="empreendedorismo_link"
+			type="media"
+			class="inputbox"
+			label="Link para um arquivo com mais informaceos"
+			description="Link para um arquivo com mais informaceos"
+			required="true"
+		/>
+	</fieldset>
+	
+	<fieldset name="detalhes_palestras_inclusao">
+		<field 
+			name="inclusao_titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo"
+			size="100"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="inclusao_texto"
+			type="editor"
+			class="inputbox"
+			label="Texto que ira no Inclusão e diversidade"
+			description="Texto que ira no Inclusão e diversidade"
+			filter="safehtml"
+		/>
+		<field
+			name="inclusao_link"
+			type="media"
+			class="inputbox"
+			label="Link para um arquivo com mais informaceos"
+			description="Link para um arquivo com mais informaceos"
+			required="true"
+		/>
+	</fieldset>
+	
+	<fieldset name="detalhes_palestras_sipat">
+		<field 
+			name="sipat_titulo"
+			type="text"
+			class="inputbox"
+			label="Titulo"
+			size="100"
+			default=""
+			required="true"
+		/>
+		
+		<field 
+			name="sipat_texto"
+			type="editor"
+			class="inputbox"
+			label="Texto que ira no SIPAT"
+			description="Texto que ira no SIPAT"
+			filter="safehtml"
+		/>
+		<field
+			name="sipat_link"
+			type="media"
+			class="inputbox"
+			label="Link para um arquivo com mais informaceos"
+			description="Link para um arquivo com mais informaceos"
+			required="true"
+		/>
+	</fieldset>
 </form>

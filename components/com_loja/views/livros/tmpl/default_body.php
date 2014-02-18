@@ -67,7 +67,11 @@ $fundo = 0;
 						</div>
 						<h2>Ficha técnica</h2>
 						<hr />
-						<span class="ld">Livro digital</span>
+						<?php if($value->tipo == 'EBO') { ?>
+							<span class="ld">Livro digital</span>
+						<?php }else if($value->tipo == 'AUD') {?>
+							<span class="ld">Audio livro</span>
+						<?php } ?>
 						<?php if($value->gratis) { ?>
 							<span class="ld">gratis</span>
 						<?php } ?>

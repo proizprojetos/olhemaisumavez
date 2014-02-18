@@ -9,8 +9,8 @@ JHtml::_('behavior.formvalidation');
 	<div class="row">
 		   <div class="span12">
            		<div class="palestra_mensagem">
-                    <p>"Numa palestra não se tem a pretensão de dar conselhos ou de ser um exemplo. Tem-se em mente a exposição de fatos e de situações que possam repercutir internamente fazendo com que cada um se escute."</p>
-                    <h5>Moacir Rauber</h5>
+                    <p>"<?php echo $this->item->mensagem_inicial; ?>"</p>
+                    <h5><?php echo $this->item->autor_msg_inicial; ?></h5>
                 </div>
                  <hr class="linha_azul2"/>
            </div>
@@ -21,70 +21,115 @@ JHtml::_('behavior.formvalidation');
         	<div class="grupos_palestras">
             	
                 <div class="grupo">
-                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/grupo_vendas.png" alt="" />
-                    
+                		<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/01.png" alt="" />
+                		<h2>Vendas</h2>
                     <a href="#grupo_info-1">SAIBA MAIS</a>
                 </div>
                 
                 <div class="grupo_info" id="grupo_info-1">
-                	<h2>O impacto da motivação nos resultados</h2>
-					<h3>Aplicação:</h3>
-					<p>Palestra dirigida para eventos empresariais, acadêmicos ou outros, podendo ser usada como ferramenta de abertura e encerramento de períodos de treinamento ou como um evento isolado.
-					</p>
-                    <h3>Objetivos:</h3>
-                    <ul>
-                    	<li>Aqui deve haver tópicos mais curtos</li>
-                        <li>Tópicos mais curtos melhoram a leitura</li>
-                        <li>Tópicos curtos e com mensagens rápidas otimizam o tempo do visitante no site.</li>
-                        <li>Pessoas perdem o interesse em textos longos.</li>
-                    </ul>
-                	<div class="bt_voltar_palestras">
-                    	<a href="#voltar">VOLTAR</a>
-                    </div>
+                	<div class="grupo_info_texto">
+	                	<h2><?php echo $this->item->vendas_titulo; ?></h2>
+						<?php echo $this->item->vendas_texto; ?>
+						<?php if(!empty($this->item->vendas_link) || $this->item->vendas_link != '') { ?>
+							<div class="bt_mais">
+	                    		<a target="_blank" href="<?php echo $this->item->vendas_link; ?>">MAIS INFORMAÇÕES</a>
+	                    	</div>
+						<?php } ?>
+	                	<div class="bt_voltar_palestras">
+	                    	<a href="#voltar">VOLTAR</a>
+	                    </div>
+	                 </div>
                 </div>
                 
                 
                 <div class="grupo">
-                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/grupo_motivacao.png" alt="" />
-                    
+                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/02.png" alt="" />
+                    <h2>Superação e motivação</h2>
                     <a href="#grupo_info-2">SAIBA MAIS</a>
                 </div>  
                 <div class="grupo_info" id="grupo_info-2">
-                	<h2>O impacto da motivação nos resultados 2</h2>
-					<h3>Aplicação:</h3>
-					<p>Palestra dirigida para eventos empresariais, acadêmicos ou outros, podendo ser usada como ferramenta de abertura e encerramento de períodos de treinamento ou como um evento isolado.
-					</p>
-                    <h3>Objetivos:</h3>
-                    <ul>
-                    	<li>Aqui deve haver tópicos mais curtos</li>
-                        <li>Tópicos mais curtos melhoram a leitura</li>
-                        <li>Tópicos curtos e com mensagens rápidas otimizam o tempo do visitante no site.</li>
-                        <li>Pessoas perdem o interesse em textos longos.</li>
-                    </ul>
-                	<div class="bt_voltar_palestras">
-                    	<a href="#voltar">VOLTAR</a>
+                	<div class="grupo_info_texto">
+	                	<h2><?php echo $this->item->superacao_titulo; ?></h2>
+							<?php echo $this->item->superacao_texto; ?>
+							<?php if(!empty($this->item->superacao_link) || $this->item->superacao_link != '') { ?>
+								<div class="bt_mais">
+		                    		<a target="_blank" href="<?php echo $this->item->superacao_link; ?>">MAIS INFORMAÇÕES</a>
+		                    	</div>
+							<?php } ?>
+	                	<div class="bt_voltar_palestras">
+	                    	<a href="#voltar">VOLTAR</a>
+	                    </div>
                     </div>
                 </div>
                 
                 <div class="grupo">
-                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/grupo_empreendedorismo.png" alt="" />
-                    
-                    <a href="#vendas">SAIBA MAIS</a>
-                </div>     
-                <div class="grupo">
-                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/grupo_diversidade.png" alt="" />
-                    
-                    <a href="#vendas">SAIBA MAIS</a>
-                </div>
-                <div class="grupo">
-                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/grupo_gestao.png" alt="" />
-                    
-                    <a href="#vendas">SAIBA MAIS</a>
+                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/03.png" alt="" />
+                    <h2>Empreenderorismo</h2>
+                    <a href="#grupo_info-3">SAIBA MAIS</a>
                 </div>  
+                <div class="grupo_info" id="grupo_info-3">
+                	<div class="grupo_info_texto">
+	                	<h2><?php echo $this->item->empreendedorismo_titulo; ?></h2>
+							<?php echo $this->item->empreendedorismo_texto; ?>
+							<?php if(!empty($this->item->empreendedorismo_link) || $this->item->empreendedorismo_link != '') { ?>
+								<div class="bt_mais">
+		                    		<a target="_blank" href="<?php echo $this->item->empreendedorismo_link; ?>">MAIS INFORMAÇÕES</a>
+		                    	</div>
+							<?php } ?>
+	                	<div class="bt_voltar_palestras">
+	                    	<a href="#voltar">VOLTAR</a>
+	                    </div>
+                    </div>
+                </div>
+                
+                
+                   
+                <div class="grupo">
+                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/04.png" alt="" />
+                    <h2>Inclusão e diversidade</h2>
+                    <a href="#grupo_info-4">SAIBA MAIS</a>
+                </div>
+                <div class="grupo_info" id="grupo_info-4">
+                	<div class="grupo_info_texto">
+	                	<h2><?php echo $this->item->inclusao_titulo; ?></h2>
+							<?php echo $this->item->inclusao_texto; ?>
+							<?php if(!empty($this->item->inclusao_link) || $this->item->inclusao_link != '') { ?>
+								<div class="bt_mais">
+		                    		<a target="_blank" href="<?php echo $this->item->inclusao_link; ?>">MAIS INFORMAÇÕES</a>
+		                    	</div>
+							<?php } ?>
+	                	<div class="bt_voltar_palestras">
+	                    	<a href="#voltar">VOLTAR</a>
+	                    </div>
+	                 </div>
+                </div>
+                
+                
+                <div class="grupo">
+                	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/05.png" alt="" />
+                    <h2>SIPAT</h2>
+                    <a href="#grupo_info-5">SAIBA MAIS</a>
+                </div>  
+                <div class="grupo_info" id="grupo_info-5">
+                	<div class="grupo_info_texto">
+	                	<h2><?php echo $this->item->sipat_titulo; ?></h2>
+							<?php echo $this->item->sipat_texto; ?>
+							<?php if(!empty($this->item->sipat_link) || $this->item->sipat_link != '') { ?>
+								<div class="bt_mais">
+		                    		<a target="_blank" href="<?php echo $this->item->sipat_link; ?>">MAIS INFORMAÇÕES</a>
+		                    	</div>
+							<?php } ?>
+	                	<div class="bt_voltar_palestras">
+	                    	<a href="#voltar">VOLTAR</a>
+	                    </div>
+                    </div>
+                </div>
+                
+                
                 <div class="grupo">
                 	<h3>Tem interesse em alguma das palestras?</h3>
                     
-                    <a href="<?php echo JURI::root() ?>contato">Entre em contato</a>
+                    <a href="<?php echo JURI::root() ?>index.php/contato">Entre em contato</a>
                 </div>      	
             </div>
         </div>
@@ -94,7 +139,7 @@ JHtml::_('behavior.formvalidation');
            		<div class="palestrante_info">
                     <h2>O Palestrante</h2>
                     <h3>Moacir Jorge Rauber</h3>
-                    <p>Aqui sugerimos uma descrição rápida da carreira de Moacir. A quantidade exagerada de texto pode cansar o visitante.</p>
+                    <p><?php echo $this->item->texto_palestrante; ?></p>
                     <button id="palestrante_info">Mais informações</button>
                 </div>
                 <div id="dialog">
@@ -104,19 +149,7 @@ JHtml::_('behavior.formvalidation');
                     <img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestrante_foto3.png" alt="" />                
                 </div>
                 <div class="info_palestras">
-                    
-                    <p><span>Moacir Jorge Rauber </span>
-                       é Bacharel em Secretariado Executivo pela Universidade Estadual do Oeste do Paraná (1996), MBA em Marketing (1998) e tem Mestrados em Engenharia de Produção pela Universidade Federal de Santa Catarina (2003) e em Gestão de Recursos Humanos pela Universidade do Minho - Braga, Portugal (2010), além de larga formação complementar. A experiência profissional se estende pelas áreas Administrativa, Secretariado, Gestão de Recursos Humanos, Vendas e Planejamento Estratégico. Também foi professor universitário no Paraná e em Santa Catarina. Possui formação em Coaching Ontológico atuando com atendimentos específicos e orientados, além de ser palestrante e escritor.<br /><br />
-Ser usuário de cadeira de rodas desde os 20 anos, quando ainda era agricultor, não foi empecilho para que se desenvolvesse como pessoa e como profissional, como demonstra a trajetória de empresário, professor, escritor, coach, palestrante e atleta. Além disso, entre o trabalho e os estudos, encontrou tempo para ser atleta de Remo que o levou para a Seleção Brasileira de 2004 a 2008, dando-lhe a possibilidade de participar em três campeonatos mundiais, sendo eles na Espanha, na Inglaterra e na Alemanha. Trata-se de um esporte de alto rendimento em que a sorte nada ou pouco representa. Cada regata se desenvolve com aproximadamente 200 remadas desde seu início ao seu final. Não há espaço para erros. Há o resultado do preparo, da dedicação e da força de vontade de cada competidor.<br /><br />
-
-Assim, é o remo um ambiente que fornece um paralelo perfeito com as atividades profissionais, porque também estas têm as regras claras e uma competição acirrada onde cada um terá que fazer o seu melhor.<br /><br />
-
-Ainda hoje segue praticando o remo como lazer, além de fazer trabalhos voluntários em instituições que desenvolvem projetos de inclusão social.<br /><br /></p>
-					<h3>Currículo lattes:</h3>
-					<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.jsp?id=K4758838Z4" target="_new"	>http://buscatextual.cnpq.br/buscatextual/visualizacv.jsp?id=K4758838Z4</a>
-					<h5>
-As palestras apresentam uma linguagem simples e objetiva, envolvendo a razão e a emoção rumo a reflexão que o despertará para as ações que impactam nos resultados.</h5>
-                    
+                    <?php echo $this->item->texto_maisinformacoes; ?>
                 </div> 
             </div>
                 <div class="palestrante_foto">
@@ -144,10 +177,10 @@ As palestras apresentam uma linguagem simples e objetiva, envolvendo a razão e 
         </div>
      </div>
      <div class="row">
-     	<div class="span12 palestra_mensagemfinal">
-         	<p>
-             	Durante as palestras são desenvolvidas algumas atividades que levam a reflexão sobre a importância do trabalho em equipe, da busca pela harmonia no convívio social, assim como sobre a importância do alinhamento estratégico entre os objetivos pessoais e organizacionais. A linguagem é simples e objetiva, envolvendo a razão e a emoção rumo a reflexão que o despertará para as ações que impactam nos resultados.
-            </p>
+     	<div class="span12 palestra_mensagemfinal" style="text-align:center">
+         	<img src="<?php echo JURI::root() ?>components/com_loja/views/palestras/images/palestras_competencias.png" />
+         	<br/><br/>
+         	<p>As palestras dão ênfase nas competências individuais que são as atitudes postas a serviço de um propósito.</p>
         </div>
     </div>
     <?php if(!empty($this->comentarios)) { ?>

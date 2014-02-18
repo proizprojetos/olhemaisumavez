@@ -59,8 +59,11 @@
 	display:inline-block;	
 }
 .palestras .palestrante .palestrante_info {
-	width:50%;
-	float:left;
+	width: 280px;
+float: left;
+height: 230px;
+display: inline-block;
+
 }
 .palestras .palestrante .palestrante_info h2, .palestras .formato_palestras h2{
 	font: normal 28px/1.5em "aller_regular", tahoma;
@@ -86,8 +89,8 @@
 	background:none;
 }
 .palestras .palestrante .palestrante_foto {
-	width:40%;	
-	display:inline-block;		
+	width:230px;	
+	float:left;
 }
 .palestras .formato_palestras {
 	margin-top:40px;	
@@ -141,8 +144,15 @@
 }
 .grupos_palestras .grupo img {
 	display: block;
-	margin-left: 10%;
+	margin-left: 30%;
 	margin-top: 15%;
+}
+.grupos_palestras .grupo  h2 {
+	font: normal 20px/1.1em "aller_regular", Tahoma;
+	color: #fff;
+	margin: 0px;
+	padding: 0px 25px;
+	height: 35px;
 }
 .grupos_palestras .grupo a, .grupos_palestras .grupo a:hover,  .grupos_palestras .grupo_info a{
 	font: normal 12px/1.5em "aller_regular", tahoma;
@@ -155,11 +165,11 @@
 	text-decoration:none;
 	text-transform:uppercase;
 }
-.grupos_palestras .grupo_info .bt_voltar_palestras {
+.grupos_palestras .grupo_info .bt_voltar_palestras,.bt_mais {
 	text-align:center;
 	
 }
-.grupos_palestras .grupo_info .bt_voltar_palestras a{
+.grupos_palestras .grupo_info .bt_voltar_palestras a, .grupos_palestras .grupo_info .bt_mais a{
 	font-size:14px;
 	padding: 7px 20px;
 }
@@ -170,6 +180,15 @@
 	background: #4aa0dc;
 	position:absolute;
 	display:none;
+}
+.grupos_palestras .grupo_info .grupo_info_texto {
+	height: 600px;
+	width: 370px;
+	overflow: auto;
+}
+.grupos_palestras .grupo_info .grupo_info_texto::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
 }
 
 .grupos_palestras .grupo_info {

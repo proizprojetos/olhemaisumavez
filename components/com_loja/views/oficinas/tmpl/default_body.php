@@ -8,7 +8,13 @@ JHtml::_('behavior.formvalidation');
 <div class="container loja_oficinas">
 	<div class="row">
         <div class="span12 capa_oficinas">
-            <img src="<?php echo JURI::root() ?>components/com_loja/views/oficinas/images/capa_oficinas.png" alt="" />
+            <img src="<?php echo JURI::root() ?>components/com_loja/views/oficinas/images/capa_oficinas.jpg" alt="" />
+        </div>
+        <div class="texto-desejado">
+          <h4> As oficinas são pensadas para pessoas que estão em processo de melhoria contínua como seres humanos e, consequentemente, 
+          	como membros organizacionais.<br />Elas têm como princípio o respeito, levando os indivíduos a desenvolver a colaboração e a 
+          	competitividade fundamentados na motivação e na superação. 
+Os resultados são uma consequência natural!</h4>
         </div>
     </div>
     <div class="row corpo_oficinas">
@@ -46,11 +52,18 @@ JHtml::_('behavior.formvalidation');
                         <h4>Duração:</h4>
                         <h3><?php echo $oficina->duracao; ?></h3>
                     </div>
+                    <?php if(!empty($oficina->id_livro_sugestao)) { ?>
                     <div class="livros_oficina">
                         <div class="livro_oficina">
                             <h4>Adquira o livro base desta oficina:</h4>                	
+                        	<a href="<?php echo JRoute::_('index.php?option=com_loja&view=livros&layout=detalhe&idlivro='.$oficina->idlivro); ?>">
+								<img src="<?php echo $oficina->imagem_capa ?>" alt="" />
+							</a>
+							<h3><?php echo $oficina->titulo_livro ?></h3>
                         </div>            	
+                        
                     </div>
+                    <?php } ?>
                 </div>
             <?php } ?>         
         </div>    

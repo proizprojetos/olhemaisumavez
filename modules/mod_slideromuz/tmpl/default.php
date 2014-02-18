@@ -11,30 +11,18 @@ require_once (JPATH_SITE.'/components/com_content/helpers/route.php');
 
 ?>
 
-<?php foreach($lista as $value => $item) { 
-	$images  = json_decode($item->images);
+<?php 
+	//foreach($lista as $value => $item) { 
+	//$images  = json_decode($item->images);
 	$url = ContentHelperRoute::getArticleRoute($item->id.":".$item->alias, $item->catid.":".$item->calias);
 	$link = JRoute::_($url);
 	//print_r($item->co);
 	$date = JFactory::getDate();
 	$now = method_exists($date, 'toMySQL') ? $date->toMySQL() : $date->toSql();
-	echo $now- $item->co;
+	
 ?>
 
-<div class="container_blog blog_<?php echo $value % 2?>">    	
-    <div class="principal_botao_azul icone-wrap icone-effect" data-target="blog_<?php echo $item->id ?>">
-        <img class="icone icone_<?php echo $value % 2?>" src="<?php echo JURI::root();?>principal_circulo_cinza.png">
-    </div>
-    
-    <div class="principal_blog_<?php echo $item->id ?> ocultar">
-        <div class="">
-            <div class="principal_capa_blog">
-               <img src="<?php echo JURI::root().$images->image_intro ?>" />
-            </div>
-            <div class="principal_blog_texto">
-                <a href="<?php echo $link; ?>"><h2><?php echo $item->title; ?></h2></a>
-                <span><?php echo substr($item->introtext, 0, 100);  ?>. <a href="<?php echo $link; ?>">Ler mais.</a></span>
-            </div>
-       </div>
-    </div>
-</div><?php } ?>
+<h4><?php echo JHTML::_('date', $item->publish_up, JText::_('d')) ?> de <?php echo JHTML::_('date', $item->publish_up, JText::_('F')) ?></h4>
+<a href="<?php echo $link; ?>"><h1><?php echo strip_tags($item->title); ?></h1></a>
+<p><?php echo strip_tags(substr($item->introtext, 0, 150));  ?>... <a href="<?php echo $link; ?>">Continue lendo</a>	
+</p>

@@ -57,6 +57,7 @@ defined('_JEXEC') or die('Acesso restrito');
 			<p><?php echo $this->livro->sinopse; ?></p>
 		</div>
 		<div class="span3">
+			<?php if($this->livro->estoque > 0) {?>
 			<div class="preco_livro">
 				<p>R$ <?php echo number_format($this->livro->valor,2) ?></p>
 				<form method="post" action="<?php echo JRoute::_('index.php?option=com_loja&task=livros.adicionarlivro'); ?>">
@@ -64,6 +65,11 @@ defined('_JEXEC') or die('Acesso restrito');
 					<input type="submit" value="Adicionar ao carrinho" class="bt_padrao" />
 				</form>
 			</div>
+			<?php }else { ?>
+			<div class="preco_livro">
+				<a href="#" class="bt_padrao">Livro indisponivel no momento</a>
+			</div>
+			<?php } ?>
 		</div>
 	</div>
 </div>

@@ -32,9 +32,9 @@ class LojaControllerPagina extends JControllerForm
 	
 	public function salvarPalestras() {
 		
-		$dados = JRequest::getVar('data', array(), 'post', 'array');
+		$dados = JRequest::getVar('jform', array(), 'post', 'array');
 		
-		$i = 1;
+		/*$i = 1;
 		print_r(($_FILES['imagens']));
 		foreach ($_FILES['imagens']['name'] as $key => $value) {
 			//echo 'entrou'.$key.'<br/>';
@@ -59,6 +59,8 @@ class LojaControllerPagina extends JControllerForm
 		//echo '<br/><br/>';
 		$dados['imagens_maisinformacoes'] = json_encode($imagens);
 		//print_r($dados);
+		 * 
+		 */
 		$model = $this->getModel('pagina', 'LojaModel');
 		
 		$retorno = $model->salvar($dados,'palestras','PAL');

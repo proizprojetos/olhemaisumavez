@@ -20,7 +20,12 @@ JHtml::_('behavior.formvalidation');
         	<div class="topodireita_coaching">
             	<h3>Quem pode ser seu Coach?</h3>
             	<p><b>Moacir Rauber</b>, formação internacional em Coaching Executivo Organizacional com ênfase na Metodologia Ontológica Transformacional reconhecido pela FIACE (Federación Ibero Americana de Coaching Ejecutivo). O trabalho se desenvolve tendo em mente o uso de técnicas que proporcionem ao coachee a possibilidade de redesenhar as formas de intervenção no seu ambiente, promovendo e implementando uma nova realidade. 
+                <br/> <br/>
+                <span>
+                	<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.jsp?id=K4758838Z4" target="_blank">Currículo lattes</a>
+                </span>
                 </p>
+                
             </div>
         </div>
         <div class="span12">

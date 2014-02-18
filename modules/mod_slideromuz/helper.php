@@ -21,17 +21,18 @@ class modSlideromuz {
 		
 		$query = 'SELECT '.
 		' a.publish_up AS co, '.
-		'a.id, a.title, a.alias, a.catid, c.alias as calias, a.images, a.introtext'.
+		'a.id, a.title, a.alias, a.catid, c.alias as calias, a.images, a.introtext, a.publish_up'.
 		' FROM #__content AS a'.
 		' LEFT JOIN #__categories AS c ON c.id=a.catid'.
 		' WHERE (a.state = 1) '.
 		' AND (a.catid = '.$categoria. ')'.
 		' AND ( a.publish_up = '.$db->Quote($nullDate).' OR a.publish_up <= '.$db->Quote($now).' )'.
 		' AND ( a.publish_down = '.$db->Quote($nullDate).' OR a.publish_down >= '.$db->Quote($now).' )';
-		$db->setQuery($query,0,3);
-		$rows = $db->loadObjectList();
+		
+		$db->setQuery($query,0,1);
+		$item = $db->loadObject();
 			
-		return $rows;
+		return $item;
 	}
 	
 	

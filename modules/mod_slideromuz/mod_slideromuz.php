@@ -9,6 +9,6 @@ defined('_JEXEC') or die('Restricted access');
 
 require_once(dirname(__FILE__).'/helper.php');
 
-$lista = modSlideromuz::getArtigos($params);
+$item = modSlideromuz::getArtigos($params);
 
 require(JModuleHelper::getLayoutPath('mod_slideromuz'));

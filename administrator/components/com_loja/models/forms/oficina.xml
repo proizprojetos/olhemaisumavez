@@ -57,6 +57,16 @@
 			description="A duração que a oficina irá ter."
 		/>	
 		
+		<field 
+			name="id_livro_sugestao" 
+			type="livro" 
+			label="Livro de sugestão para a categoria" 
+			description="Livro de sugestão para a categoria"
+			class="inputbox" 
+			addfieldpath="/administrator/components/com_loja/models/fields"
+			default="NULL"
+		/>
+		
 		<field
 			name="ativo"
 			type="radio"
@@ -68,5 +78,8 @@
 			<option value="1">Sim</option>
 			<option value="0">Não</option>
 		</field>
+		
+		
+		
 	</fieldset>
 </form>

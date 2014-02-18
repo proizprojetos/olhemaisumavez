@@ -2,8 +2,7 @@ jQuery(function($){
 	$(".tab-galeria").tabs();
 	
 	$("#tab-fotos .jcarousel .item img").click(function() {
-       $("#corpo_slider").hide('slow'); 
-	    
+       //$("#corpo_slider").fadeTo( "slow");
 	   var categoria = $(this).data("id");
 	   $('#tab-fotos .thumbs li').each(function (index){
 	      
@@ -39,8 +38,7 @@ jQuery(function($){
               // });               
            }
        });  
-       
-       $("#corpo_slider").show('slow');
+       //$("#corpo_slider").show('slow');
 	    
 	});
 	
@@ -63,7 +61,7 @@ jQuery(function($){
     
     
     $("#tab-videos .jcarousel .item img").click(function() {
-       $("#corpo_video").hide('slow'); 
+      // $("#corpo_video").hide('slow'); 
         
        var categoria = $(this).data("id");
        $('#tab-videos .thumbs li').each(function (index){
@@ -102,7 +100,7 @@ jQuery(function($){
            }
        });  
        
-       $("#corpo_video").show('slow');
+       //$("#corpo_video").show('slow');
         
     });
     

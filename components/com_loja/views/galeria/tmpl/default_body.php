@@ -7,8 +7,8 @@ JHtml::_('behavior.formvalidation');
 ?>
 
 <div class="container loja_oficinas">
-	<div class="row">
-        <div class="span12 tab-galeria">
+	<div class="">
+        <div class="tab-galeria">
             <ul class="galeria_menu">
             	<li><a href="#tab-fotos">Fotos</a></li>
             	<li><a href="#tab-videos">Videos</a></li>
@@ -74,12 +74,16 @@ JHtml::_('behavior.formvalidation');
 											 } 
 										}?>
 									</ul>
+									
 								</div>
 	    						
 	    					</div>
+	    					
     					</div>
-    				</div>    				
+    					
+    				</div>    	
     			</div>
+    				
             </div>
             <div id="tab-videos">
             	<div class="jcarousel">
@@ -102,7 +106,7 @@ JHtml::_('behavior.formvalidation');
 				<hr class="linha_azul" style="margin-top: 0px"/>
 				
 				<div class="container_video">
-					<div class="video">
+					<div class="video video-container">
 						<iframe width="900" height="480"
 							src="#"
 							frameborder="0" allowfullscreen>

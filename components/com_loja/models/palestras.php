@@ -24,6 +24,21 @@ class LojaModelPalestras extends JModelForm {
 		return $form;
 	}
 	
+	public function getItem() {
+		
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		
+		//Seleciona os campos
+		$query->select('p.*');
+		$query->from('#__loja_pagina_palestras p');
+		$query->where('p.pagina_ref = \'PAL\'');
+		$db->setQuery((String) $query);
+		$pagina = $db->loadObject();
+		
+		return $pagina;
+	}
+	
 	public function getListacomentarios() {
 		$db = JFactory::getDBO();
 		$query = $db->getQuery(true);

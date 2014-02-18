@@ -47,3 +47,4 @@
 2013-10-09T12:16:45+00:00	INFO	joomlafailure	Senha inválida
 2013-10-10T19:14:52+00:00	INFO	joomlafailure	Usuário não existe
 2013-10-16T19:03:30+00:00	INFO	joomlafailure	Usuário não existe
+2014-02-07T11:25:47+00:00	INFO	joomlafailure	Usuário não existe

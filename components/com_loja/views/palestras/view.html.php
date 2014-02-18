@@ -10,6 +10,8 @@ class LojaViewPalestras extends JViewLegacy {
 	//Primeiro método a ser chamado ao iniciar o carregamento da pagina.
 	function display($tpl = null) {
 	
+		$this->item		= $this->get('item');
+		//print_r($this->item);
 		//Pega os dados da sessao
 		$this->comentarios		= $this->get('listacomentarios');
 		$this->prepareDocument();	

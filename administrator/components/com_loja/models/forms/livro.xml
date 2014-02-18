@@ -98,7 +98,7 @@
 			type="integer"
 			label="Páginas"
 			decription='Numero de páginas que o livro tem'
-			first='1'
+			first='0'
 			last='2000'
 			step='1'
 		/>
@@ -107,7 +107,7 @@
 			type="integer"
 			label="Estoque"
 			decription='Quantidade de livros em estoque'
-			first='1'
+			first='0'
 			last='5000'
 			step='1'
 		/>

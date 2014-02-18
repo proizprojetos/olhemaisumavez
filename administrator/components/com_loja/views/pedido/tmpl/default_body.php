@@ -32,7 +32,7 @@
 		<p>Valor total: <?php echo 'R$'.money_format('%i',  $this->escape($this->pedido->valor_frete)+$this->escape($this->pedido->valor_itens))?> 	 </p>
 	</div>
 </div>
-<div class="pedido_detalhe_entrega">
+<div class="pedido_detalhe_entrega"  style="display: inline-block;">
 	<h3>Dados para entrega</h3>
 	<div class="item">
 		<p>CEP:<?php echo $this->escape($this->pedido->cep_entrega); ?></p>
@@ -51,6 +51,27 @@
 	</div>
 	<div class="item">
 		<p>Estado: <?php echo $this->escape($this->pedido->estado_entrega); ?> </p>
+	</div>
+</div>
+<div class="pedido_detalhe_entrega" style="display: inline-block; margin-left: 50px;">
+	<h3>Dados do cliente</h3>
+	<div class="item">
+		<p>ID:<?php echo $this->escape($this->pedido->id_cliente); ?></p>
+	</div>
+	<div class="item">
+		<p>Nome completo: <?php echo $this->escape($this->pedido->nome_completo); ?> </p>
+	</div>
+	<div class="item">
+		<p>Nome de usúario: <?php echo $this->escape($this->pedido->username); ?> </p>
+	</div>
+	<div class="item">
+		<p>CPF: <?php echo $this->escape($this->pedido->cpf); ?> </p>
+	</div>
+	<div class="item">
+		<p>Telefone: <?php echo $this->escape($this->pedido->telefone); ?> </p>
+	</div>
+	<div class="item">
+		<p>Email: <?php echo $this->escape($this->pedido->email); ?> </p>
 	</div>
 </div>
 <br/>

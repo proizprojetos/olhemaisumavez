@@ -8,28 +8,31 @@ class LojaViewPagina extends JViewLegacy {
 
 	public function display($tpl = null) {
 		
-		$form = $this->get('Form');
+		
 		//print_r($form);
+		
+		if($this->getLayout() === 'coaching') {
+			$item = $this->get('ItemCoaching');
+			JFactory::getApplication()->setUserState('com_loja.edit.pagina.data', $item);
+			$this->item = $item;			
+		}
+		
+		if($this->getLayout() === 'palestras') {
+			
+			$item = $this->get('ItemPalestras');
+			JFactory::getApplication()->setUserState('com_loja.edit.pagina.data', $item);
+			$this->item = $item;		
+		}
 		
 		if (count($errors = $this->get('Errors'))) 
 		{
 			JError::raiseError(500, implode('<br />', $errors));
 			return false;
 		}
-		
-		if($this->getLayout() === 'coaching') {
-			$item = $this->get('ItemCoaching');
-			$this->item = $item;			
-		}
-		
-		if($this->getLayout() === 'palestras') {
-			$item = $this->get('ItemPalestras');
-			$this->item = $item;		
-		}
-		
+		$form = $this->get('Form');
 		$this->form = $form;
-		//$this->item = $item;
-		//echo 'eee:'.$this->item.'<br/>';
+		$this->item = $item;
+		//print_r($this->item);
 		
 		$this->addToolBar();
 		
@@ -53,7 +56,7 @@ class LojaViewPagina extends JViewLegacy {
 		}
 		
 		if($this->getLayout() === 'palestras') {
-			JToolBarHelper::custom('pagina.salvarPalestras','save','save','Salvar alterações', false);
+			JToolBarHelper::custom('pagina.salvarPalestras','save','save','Salvar alteraçõess', false);
 			JToolBarHelper::custom('pagina.cancelar', 'cancel','cancel','Cancelar',false);
 		}
 		//$isNew = ($this->item->id == 0);

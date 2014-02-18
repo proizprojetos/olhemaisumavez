@@ -99,7 +99,6 @@ JHtml::_('behavior.framework');
 							<?php echo htmlspecialchars($tag->title); ?></a>
 						</li>
 				<?php } ?>
-                
             </ul>
         </div>
         <?php } ?>

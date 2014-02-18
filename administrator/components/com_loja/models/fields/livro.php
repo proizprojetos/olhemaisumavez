@@ -30,11 +30,12 @@ class JFormFieldLivro extends JFormFieldList
 		$db->setQuery((string)$query);
 		$messages = $db->loadObjectList();
 		$options = array();
+		$options[] = JHtml::_('select.option','0', 'Nenhum');
 		if ($messages)
 		{
 			foreach($messages as $message) 
 			{
-				$options[] = JHtml::_('select.option', $message->id, $message->nome);
+				$options[] = JHtml::_('select.option', $message->id, $message->titulo);
 			}
 		}
 		$options = array_merge(parent::getOptions(), $options);

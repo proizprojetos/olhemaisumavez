@@ -56,7 +56,7 @@
 		}
 	}); 
 	
-	$('.grupo_info a').click(function() {
+	$('.grupo_info .bt_voltar_palestras a').click(function() {
 		$('.grupo_info').fadeOut('slow');	
 		//$(".grupo_info").flippyReverse();
 		/*alert('a');

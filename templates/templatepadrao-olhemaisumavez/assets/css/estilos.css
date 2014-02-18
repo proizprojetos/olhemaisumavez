@@ -53,12 +53,13 @@ a:hover, a:focus {
 }
 .menu, .logo {
 	display: inline-block;
+	margin-bottom: 10px;
 }
 .menu ul {
 	list-style-type: none;
 }
 .menu .nav-child {
-	margin: 15px 15px;
+	margin: 1px 0;
 	display:none;
 	margin-left: -100px;
 }
@@ -69,6 +70,8 @@ a:hover, a:focus {
 }
 .menu ul li:hover .nav-child, .menu ul .active .nav-child{ 
 	display: block; 
+	position: absolute;
+	width: 303px;
 }
 .menu ul .active .nav-child .active a {
 	background: #4aa0dc;
@@ -76,10 +79,11 @@ a:hover, a:focus {
 }
 .menu ul li {
 	display: inline-table;	
+	margin: 0px 0px 0px;
 }
 .menu ul a {
 	
-	padding: 2px 20px;
+	padding: 1px 20px;
 	background: #f1f2f2;
 	border-radius: 40px;
 	margin-left: 10px;
@@ -92,7 +96,7 @@ a:hover, a:focus {
 }
 .menu ul li a, .menu ul li a:hover {
 	text-transform: uppercase;
-	font: normal 14px 'aller_regular', Tahoma;
+	font: normal 12px 'aller_regular', Tahoma;
 	color: #5a5a5a;
 	display: inline;
 }
@@ -137,6 +141,10 @@ a:hover, a:focus {
 	font: normal 11px 'aller_regular', Tahoma;
 	color: #fff;
 	text-decoration: none;
+}
+.proiz img {
+	width: 42px;
+	margin-top: -3px
 }
 
 /*TELA DE LOGIN*/
@@ -270,6 +278,34 @@ a:hover, a:focus {
 	background-image: -webkit-linear-gradient(top, rgba(120,146,175,1),rgba(90,111,134,1));
 	display: inline-table;
 	margin-left: 20px;
+}
+.bt_padrao_b  {
+	text-transform: uppercase;
+	border-radius: 35px;
+	font: normal 13px 'aller_regular', Tahoma;
+	color: #fff;
+	border: none;
+	-moz-box-shadow: 1px 2px 5px #000;
+	-webkit-box-shadow: 1px 2px 5px #000;
+	box-shadow: 1px 2px 5px #000;
+	padding: 10px 22px;
+	margin-top: 1px;
+	background-color: #5a6f86;
+	background-image: linear-gradient(to bottom, rgba(120,146,175,1),rgba(90,111,134,1));
+	background-image: -moz-linear-gradient(top, rgba(120,146,175,1),rgba(90,111,134,1));
+	background-image: -webkit-linear-gradient(top, rgba(120,146,175,1),rgba(90,111,134,1));
+	display: inline-table;
+	margin-left: 20px;
+	text-decoration: none;
+}
+.bt_padrao_b:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.bt_padrao_b:active {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 /*FIM DA TELA DE LOGIN*/
 
@@ -430,10 +466,13 @@ a:hover, a:focus {
 }
 .desenvolvido {
 	text-align:right;
-	font: normal 10px/1.5em "din_light", Tahoma;
-	color: #222222;
+	font: normal 11px/1.5em "din_light", Tahoma;
+	color: #787878;
 	margin-right: 50px;
 	margin-bottom: 30px;
+	bottom: 0px;
+	position: absolute;
+	right: 0;
 }
 .desenvolvido img {
 	width: 40px;
@@ -441,8 +480,7 @@ a:hover, a:focus {
 }
 .menu_superior_principal {
 	text-align: center;
-	margin: 20px;	
-	display:none;
+	margin: 20px;
 	position: fixed;
 	left: 30%;
 	top: 0;
@@ -541,30 +579,6 @@ a:hover, a:focus {
 	color: #449fe5;	
 	font-size: 16px;
 }
-.menu_superior_principal .parent:hover {
-	margin-left: -55px;	
-}
-/*Parallax pagina inicial*/
-#paralax-bg1{
-	z-index:-99;
-	position:fixed;
-	top:0;
-	background-image: url('../images/bg_home1.png');
-	min-height: 1720px;
-	width: 100%;
-	margin-top: 750px;
-}
-#paralax-bg2 {
-	z-index:-99;
-	position:fixed;
-	top:0;
-	background-image: url('../images/bg_home2.png');
-	min-height: 1720px;
-	width: 100%;
-	margin-top: 750px;
-}
-
-/*fim do parallax*/
 /*fim da pagina inicial*/
 
 
@@ -630,3 +644,90 @@ a:hover, a:focus {
 	resize: none;	
 }
 /*fim do formulario de contato */
+
+
+
+/**slide pagina inicial */
+#nextslide {
+	opacity: 0.6;
+	display: inline;
+	position: absolute;
+	height: 43px;
+	width: 43px;
+	top: 50%;
+	margin-top: -21px;
+	right: 0px;
+	background: #4aa0dc url('../images/seta_next.png') 7px center no-repeat;
+	padding: 8px 0px;
+}
+#nextslide:hover {
+	cursor: pointer;
+}
+
+.titulo_inicial {
+	position: static;
+	margin-top: 150px;
+	left: 15%;
+	text-align: left;
+}
+.titulo_inicial h1{
+	font: normal 75px/0.9em "aller_bold", tahoma;
+	color: #fff;
+	margin: 0px;
+	
+	width: 350px
+}
+.titulo_inicial h3{ 
+	font: normal 18px/1.5em "aller_regular", tahoma;
+	color: #fff;
+}
+
+.ultimas_inicial {
+	margin-top: 200px;
+	text-align: left;
+	position: static;
+}
+.ultimas_inicial h1 {
+	font: normal 30px/1.5em "aller_regular", tahoma;
+	color: #fff;
+}
+.palestras_inicial a h3, .palestras_inicial a:hover {
+	font: bold 18px/1.5em "aller_regular", Tahoma;
+	color: #7892af;
+	text-decoration: none;
+}
+.palestras_inicial p {
+	font: normal 15px/1.5em "aller_regular", Tahoma;
+	color: #fff;
+}
+.livros_inicial img {
+	float: left;
+}
+.livros_inicial p {
+	display: block;
+	margin-top: 15px;
+	font: normal 15px/1.5em "aller_regular", Tahoma;
+	color: #fff;
+}
+.livros_inicial a {
+	margin: 20px 0px 0px 0px;
+}
+
+.materia_inicial h4 {
+	font: normal 11px/1.5em "aller_regular", Tahoma;
+	color: #fff;
+	margin: 0px
+}
+.materia_inicial h1 {
+	font: normal 20px/1.5em "aller_regular", Tahoma;
+	color: #4aa0dc;
+	margin: 5px 0px;
+}
+.materia_inicial p{
+	font: normal 14px/1.4em "aller_regular", Tahoma;
+	color: #fff;
+}
+.materia_inicial a,.materia_inicial a:hover  {
+	font: bold 14px/1.4em "aller_regular", Tahoma;
+	color: #fff;
+}

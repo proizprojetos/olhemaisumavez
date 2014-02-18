@@ -77,6 +77,23 @@ class LojaController extends JControllerLegacy {
 							$mensagem .= 'Ocorreu o erro: '.$e->getMessage().'</br>';
 							//return false;
 						}
+						
+						/*$db = JFactory::getDBO();
+						
+						$db->setQuery(
+							'UPDATE #__loja_livros SET estoque = (estoque - 1) WHERE id = '.$idPedido
+						);
+						
+						try
+						{
+							$db->execute();
+						}
+						catch (RuntimeException $e)
+						{
+							$mensagem .= 'Ocorreu o erro: '.$e->getMessage().'</br>';
+							//return false;
+						}*/
+						
 						$mensagem .= 'Atualizaou no banco com sucesso<br/>';
 					}
 				}		   
@@ -136,10 +153,10 @@ class LojaController extends JControllerLegacy {
             $config->get( 'config.mailfrom' ),
             $config->get( 'config.fromname' ) );
          
-        $mailer->setSender('contato@olhemaisumavez.com.br');
+        $mailer->setSender('moacir@olhemaisumavez.com.br');
         //$mailer->setSender($sender);
 		
-        $mailer->addRecipient('contato@olhemaisumavez.com.br');
+        $mailer->addRecipient('moacir@olhemaisumavez.com.br');
       
         $titulo = 'Email de Contato!';
         

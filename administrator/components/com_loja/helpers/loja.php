@@ -16,7 +16,7 @@ abstract class LojaHelper {
 		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_EDITORAS'), 'index.php?option=com_loja&view=editoras', $view == 'editoras' || $view == 'editora');
 		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_AUTORES'), 'index.php?option=com_loja&view=autors', $view == 'autors' || $view == 'autor');
 		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_LIVROS'), 'index.php?option=com_loja&view=livros', $view == 'livros' || $view == 'livro');
-		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_EBOOKS'), 'index.php?option=com_loja&view=ebooks', $view == 'ebooks' || $view == 'ebook');
+		JSubMenuHelper::addEntry('Gerenciar Livros digitais', 'index.php?option=com_loja&view=ebooks', $view == 'ebooks' || $view == 'ebook');
 		JSubMenuHelper::addEntry(JText::_('COM_LOJA_SUBMENU_OFICINAS'), 'index.php?option=com_loja&view=oficinas', $view == 'oficinas' || $view == 'oficina');
 		JSubMenuHelper::addEntry('Gerenciar Comentários', 'index.php?option=com_loja&view=comentarios', $view == 'comentarios' || $view == 'comentario');
 		JSubMenuHelper::addEntry('Gerenciar Página Coaching', 'index.php?option=com_loja&view=pagina&layout=coaching', $view == 'pagina' && $layout == 'coaching');

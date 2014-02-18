@@ -32,8 +32,9 @@ class LojaModelOficinas extends JModelForm {
 		
 		$nowDate = $db->quote($date->toSql());
 		
-		$query->select('oficina.*')
-		->from('#__loja_oficinas oficina');
+		$query->select('oficina.*, livro.id as idlivro, livro.titulo as titulo_livro, livro.imagem_capa')
+		->from('#__loja_oficinas oficina')
+		->JOIN('LEFT','#__loja_livros livro on oficina.id_livro_sugestao = livro.id');
 		$db->setQuery((String) $query);
 		$oficinas = $db->loadObjectList();
 		

@@ -161,9 +161,6 @@ JHtml::_('behavior.caption');
 						$iyear++;
 					}
 					echo '</ul>';
-					
-					
-				
 			?>
 	
 			<jdoc:include type="modules" name="blog_arquivo" style="xhtml" />
@@ -182,10 +179,17 @@ JHtml::_('behavior.caption');
             <?php echo $this->loadTemplate('children'); ?> </div>
         <?php endif; ?>
         <?php if (($this->params->def('show_pagination', 1) == 1  || ($this->params->get('show_pagination') == 2)) && ($this->pagination->get('pages.total') > 1)) : ?>
+        <div class="row">
+        	<div class="span7">
+        	
+        	
+        
         <div class="pagination" style="text-align: center">
             <?php  if ($this->params->def('show_pagination_results', 1)) : ?>
-            <p class="counter pull-right"> <?php echo $this->pagination->getPagesCounter(); ?> </p>
+            
             <?php endif; ?>
             <?php echo $this->pagination->getPagesLinks(); ?> </div>
-        <?php  endif; ?>
-    </div>
+	        <?php  endif; ?>
+	    </div>
+    	</div>
+       </div>

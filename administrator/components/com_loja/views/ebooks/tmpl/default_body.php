@@ -34,7 +34,7 @@ JHtml::_('formbehavior.chosen', 'select');
 					Edição
 				</th>
 				<th class="nowrap center" >
-					Estoque
+					Tipo
 				</th>
 				<th class="nowrap center" >
 					Inicio da publicação
@@ -72,7 +72,7 @@ JHtml::_('formbehavior.chosen', 'select');
 						<?php echo $item->edicao?> 					
 					</td>
 					<td class="center"> 
-						<?php echo $item->quantidade?> 					
+						<?php echo ($this->escape($item->tipo) == 'AUD' ? 'Audio book' : 'Ebook') ; ?>					
 					</td>
 					<td class="center">
 						<?php echo date("d/m/Y", strtotime($this->escape($item->inicio_publicacao))); ?> 					
